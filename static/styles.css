@@ -1,0 +1,182 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #6c6868;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 80%;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 8px; /* Уменьшаем отступы */
+    font-size: 14px; /* Уменьшаем размер шрифта */
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+.folder, .file {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.folder a, .file a {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.folder::before {
+    content: "📁";
+    margin-right: 10px;
+}
+
+.file::before {
+    content: "📄";
+    margin-right: 10px;
+}
+
+/* Unified Button Styling */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 25px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.button:active {
+    background-color: #004085;
+    transform: translateY(0);
+}
+
+/* Special Button Color Variants */
+.create-folder-submit {
+    background-color: #007bff;
+}
+
+.create-folder-submit:hover {
+    background-color: #007bff;
+}
+
+.upload-button {
+    background-color: #007bff;
+}
+
+.upload-button:hover {
+    background-color: #007bff;
+}
+
+.back {
+    background-color: #6c757d;
+}
+
+.back:hover {
+    background-color: #5a6268;
+}
+
+/* Input field styling */
+.create-folder-form input[type="text"], .upload-form input[type="file"] {
+    display: inline-block;
+    padding: 10px;
+    font-size: 14px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.create-folder-form input[type="text"] {
+    width: 200px;
+    border: 1px solid #ddd;
+}
+
+.create-folder-form input[type="text"]:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.upload-form input[type="file"] {
+    display: none;
+}
+
+/* File and Folder Styling */
+.file-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.file-name {
+    display: flex;
+    align-items: center;
+}
+
+.file-size {
+    margin-left: 10px; /* Убираем лишний отступ */
+    white-space: nowrap;
+    font-size: 13px; /* Уменьшаем размер шрифта для размера файла */
+}
+
+.file-list {
+    max-height: 500px; /* Увеличиваем максимальную высоту */
+    overflow-y: auto;
+    overflow-x: hidden; /* Убираем нижнюю полоску прокрутки */
+    border: 1px solid #ddd;
+    padding: 5px; /* Уменьшаем отступы */
+    padding-right: 17px; /* Добавляем отступ справа */
+    border-radius: 8px;
+}
+
+/* Form Styling */
+.upload-form, .create-folder-form {
+    display: inline-block;
+    margin-bottom: 10px;
+}
