@@ -253,4 +253,4 @@ if __name__ == '__main__':
         app.run(
         host='0.0.0.0',
         port=443,
-        ssl_context=('certificate.crt', 'certificate.key'))
+        ssl_context=('sertificats/certificate.crt', 'sertificats/certificate.key'))
