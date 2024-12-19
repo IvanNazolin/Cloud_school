@@ -3,22 +3,7 @@
 /* Основные стили для страницы логина */
 body {
     font-family: Arial, sans-serif;
-  background-image: linear-gradient(
-    15deg,
-    hsl(55deg 90% 48%) 0%,
-    hsl(65deg 87% 45%) 21%,
-    hsl(76deg 83% 42%) 33%,
-    hsl(86deg 79% 40%) 41%,
-    hsl(96deg 76% 37%) 47%,
-    hsl(107deg 72% 34%) 51%,
-    hsl(117deg 69% 31%) 55%,
-    hsl(126deg 65% 28%) 58%,
-    hsl(137deg 63% 25%) 61%,
-    hsl(147deg 58% 22%) 64%,
-    hsl(158deg 55% 19%) 68%,
-    hsl(169deg 52% 16%) 74%,
-    hsl(178deg 48% 14%) 96%
-  );
+    background-color: #123332;
     /*    background-color: #6c6868;*/
     margin: 0;
     padding: 0;
@@ -26,6 +11,34 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+  background-image: linear-gradient(
+    40deg,
+    hsl(175deg 87% 81%) 0%,
+    hsl(180deg 90% 79%) 4%,
+    hsl(185deg 92% 76%) 8%,
+    hsl(191deg 93% 74%) 13%,
+    hsl(196deg 95% 71%) 17%,
+    hsl(201deg 96% 68%) 21%,
+    hsl(207deg 97% 66%) 25%,
+    hsl(212deg 97% 63%) 29%,
+    hsl(217deg 98% 61%) 33%,
+    hsl(222deg 99% 58%) 37%,
+    hsl(228deg 99% 55%) 42%,
+    hsl(233deg 100% 53%) 46%,
+    hsl(238deg 100% 50%) 50%,
+    hsl(230deg 100% 48%) 54%,
+    hsl(221deg 100% 46%) 58%,
+    hsl(213deg 100% 44%) 63%,
+    hsl(204deg 100% 42%) 67%,
+    hsl(196deg 99% 40%) 71%,
+    hsl(187deg 99% 38%) 75%,
+    hsl(179deg 99% 36%) 79%,
+    hsl(170deg 99% 34%) 83%,
+    hsl(162deg 99% 33%) 87%,
+    hsl(153deg 99% 31%) 92%,
+    hsl(145deg 99% 29%) 96%,
+    hsl(136deg 99% 27%) 100%
+  );
 }
 
 .container {
@@ -73,22 +86,7 @@ label {
     display: block;
     width: 100%;
     padding: 12px;
-  background-image: linear-gradient(
-    15deg,
-    hsl(55deg 95% 84%) 0%,
-    hsl(65deg 91% 78%) 7%,
-    hsl(75deg 87% 72%) 14%,
-    hsl(86deg 84% 66%) 21%,
-    hsl(96deg 79% 60%) 27%,
-    hsl(106deg 75% 54%) 34%,
-    hsl(116deg 72% 48%) 40%,
-    hsl(127deg 68% 43%) 47%,
-    hsl(137deg 64% 37%) 54%,
-    hsl(147deg 59% 31%) 61%,
-    hsl(158deg 56% 25%) 69%,
-    hsl(168deg 52% 19%) 79%,
-    hsl(178deg 48% 14%) 100%
-  );
+    background-color: #007bff;
     color: #fff;
     border: none;
     border-radius: 5px;
