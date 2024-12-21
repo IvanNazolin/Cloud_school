@@ -10,16 +10,23 @@ import tempfile
 import urllib.parse
 from functools import wraps
 from flask_talisman import Talisman
+import sqlite3
 
 app = Flask(__name__)
 talisman = Talisman(app, force_https=True)
 
+bd = sqlite3.connect('cloud.db')
+cursor = bd.cursor()
+
+cursor.execute("SELECT base_dir FROM config WHERE id = 1")
 # Укажите корневой каталог для сканирования
-BASE_DIR = os.path.expanduser(config.BASE_DIR)
+BASE_DIR = os.path.expanduser((cursor.fetchone())[0])
 
 # Учетные данные для входа (пароль будет хешироваться)
-USERNAME = config.USERNAME
-PASSWORD_HASH = config.PASSWORD_HASH  # Пароль должен быть захеширован заранее в config
+cursor.execute("SELECT username FROM config WHERE id = 1")
+USERNAME = (cursor.fetchone())[0]
+cursor.execute("SELECT password_hash FROM config WHERE id = 1")
+PASSWORD_HASH = (cursor.fetchone())[0]  # Пароль должен быть захеширован заранее в config
 
 # Специальные данные для доступа к настройкам
 SETTINGS_USERNAME = 'admin'
@@ -49,7 +56,7 @@ def encrypt_file_with_js(file_path, password):
 
 def check_auth(username, password):
     """Функция для проверки аутентификационных данных"""
-    return username == USERNAME and hmac.compare_digest(PASSWORD_HASH, hashlib.sha256(password.encode()).hexdigest())
+    return username == config.USERNAME and hmac.compare_digest(PASSWORD_HASH, hashlib.sha256(password.encode()).hexdigest())
 
 def requires_auth(f):
     @wraps(f)

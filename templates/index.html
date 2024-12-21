@@ -35,6 +35,8 @@
 
             <!-- Button to open encode.html in a new window -->
             <a class="button open-file" href="{{ url_for('open_encode') }}" target="_blank">Decode file</a>
+            <a class="button log out" href="{{ url_for('logout') }}" target="_blank">Log out</a>
+
             <script>
                 function openFile() {
                     window.open('{{ url_for("static", filename="encode.html") }}', '_blank');
