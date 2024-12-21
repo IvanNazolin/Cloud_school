@@ -24,14 +24,22 @@
                 <input type="file" name="file" id="file-input" hidden>
                 <label for="file-input" class="button upload-button">Choose File</label>
                 <button type="submit" class="button upload-submit">Upload</button>
-            </form>
-
+            </form>     
+                 
             <!-- Folder creation form -->
             <form action="{{ url_for('create_folder') }}" method="post" class="create-folder-form">
                 <input type="hidden" name="subpath" value="{{ subpath }}">
                 <input type="text" name="folder_name" placeholder="New folder name" required>
                 <button type="submit" class="button create-folder-submit">Create Folder</button>
             </form>
+
+            <!-- Button to open encode.html in a new window -->
+            <a class="button open-file" href="{{ url_for('open_encode') }}" target="_blank">Decode file</a>
+            <script>
+                function openFile() {
+                    window.open('{{ url_for("static", filename="encode.html") }}', '_blank');
+                }
+            </script>
         </div>
         <div class="file-list">
             <ul>

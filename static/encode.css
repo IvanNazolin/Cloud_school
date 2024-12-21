@@ -1,0 +1,134 @@
+/* Основные стили для страницы */
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(
+        15deg,
+        hsl(55deg 90% 48%) 0%,
+        hsl(65deg 87% 45%) 21%,
+        hsl(76deg 83% 42%) 33%,
+        hsl(86deg 79% 40%) 41%,
+        hsl(96deg 76% 37%) 47%,
+        hsl(107deg 72% 34%) 51%,
+        hsl(117deg 69% 31%) 55%,
+        hsl(126deg 65% 28%) 58%,
+        hsl(137deg 63% 25%) 61%,
+        hsl(147deg 58% 22%) 64%,
+        hsl(158deg 55% 19%) 68%,
+        hsl(169deg 52% 16%) 74%,
+        hsl(178deg 48% 14%) 96%
+    );
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 400px;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Стили для контейнера ввода */
+.input-container {
+    margin-bottom: 20px;
+}
+
+.input-container label {
+    display: block;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.input-container input {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.input-container input[type="file"] {
+    display: none; /* Скрываем стандартную кнопку */
+}
+
+.input-container input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Кастомная кнопка загрузки файла */
+.custom-file-upload {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.custom-file-upload:hover {
+    background-color: #0056b3;
+}
+
+.custom-file-upload:active {
+    background-color: #004085;
+}
+
+/* Стили для кнопок */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-container button {
+    padding: 12px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #007bff;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 48%;
+}
+
+.button-container button:hover {
+    background-color: #0056b3;
+}
+
+.button-container button:active {
+    background-color: #004085;
+}
+
+/* Статусный текст */
+#status {
+    margin-top: 15px;
+    font-size: 14px;
+    color: green;
+    text-align: center;
+}
+
+/* Кастомизация для ошибок */
+#status.error {
+    color: red;
+}

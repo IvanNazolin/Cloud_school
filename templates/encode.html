@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Encryption and Decryption</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='encode.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Encrypt or Decrypt File</h1>
+
+        <div class="input-container">
+            <label for="file">Select File:</label>
+            <!-- Скрываем стандартную кнопку -->
+            <input type="file" id="file" />
+            <!-- Кастомная кнопка -->
+            <label for="file" class="custom-file-upload">
+                Choose File
+            </label>
+        </div>
+
+        <div class="input-container">
+            <label for="password">Enter Password:</label>
+            <input type="password" id="password" />
+        </div>
+
+        <div class="button-container">
+            <button id="encryptButton">Encrypt</button>
+            <button id="decryptButton">Decrypt</button>
+        </div>
+
+        <p id="status"></p>
+    </div>
+
+    <script src="static/encode.js"></script>
+</body>
+</html>

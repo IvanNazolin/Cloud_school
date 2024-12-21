@@ -268,8 +268,12 @@ def create_folder():
 
     return redirect(url_for('index', subpath=subpath))
 
+@app.route('/open_encode')
+def open_encode():
+    # Отдаем файл encode.html из папки static
+   return render_template('encode.html')
+
 if __name__ == '__main__':
-        app.run(
-        host='192.168.1.10',
-        port=100,
-        ssl_context=('sertificats/certificate.crt', 'sertificats/certificate.key'))
+    app.run(host='0.0.0.0',
+    port=100,
+    ssl_context=('sertificats/certificate.crt', 'sertificats/certificate.key'))
