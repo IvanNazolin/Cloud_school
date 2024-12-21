@@ -1,5 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for, session, send_from_directory, Response
 import os
+import subprocess
+import sys
 import hashlib
 import hmac
 import config
@@ -32,6 +34,18 @@ logging.basicConfig(level=logging.DEBUG)
 
 # Максимальный размер файла для загрузки (например, 16 MB)
 app.config['MAX_CONTENT_LENGTH'] = 16 * 1024 * 1024  # 16 MB
+
+def encrypt_file_with_js(file_path, password):
+    # Запуск Node.js скрипта с аргументами (путь к файлу и пароль)
+    result = subprocess.run(['node', 'encrypt.js', file_path, password], capture_output=True, text=True)
+    
+    if result.returncode == 0:
+        # Чтение результата из вывода Node.js скрипта
+        encrypted_file_path = result.stdout.strip()  # Убираем лишние пробелы и новые строки
+        print(f"Encryption successful. Encrypted file: {encrypted_file_path}")
+    else:
+        print("Error:", result.stderr)
+
 
 def check_auth(username, password):
     """Функция для проверки аутентификационных данных"""
@@ -125,7 +139,12 @@ def download_file(filepath):
         file_path = os.path.join(directory, filename)
         if not os.path.exists(file_path):
             return "File not found", 404
-
+        
+        encrypt_file_with_js(directory+"/"+filename,config.ENCODE_PASS)
+        index = filename.rfind('.')  # Находим индекс последней точки
+        filename = filename[:index] + 's' + filename[index:]
+        directory = os.path.dirname(os.path.abspath(__file__))
+        print(directory)
         return send_from_directory(directory, filename, as_attachment=True)
 
     except Exception as e:
