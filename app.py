@@ -252,5 +252,5 @@ def create_folder():
 if __name__ == '__main__':
         app.run(
         host='192.168.1.10',
-        port=443,
+        port=100,
         ssl_context=('sertificats/certificate.crt', 'sertificats/certificate.key'))
