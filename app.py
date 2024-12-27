@@ -12,6 +12,9 @@ from functools import wraps
 from flask_talisman import Talisman
 import sqlite3
 
+
+encode_mod=0
+
 app = Flask(__name__)
 talisman = Talisman(app, force_https=True)
 
@@ -146,13 +149,16 @@ def download_file(filepath):
         file_path = os.path.join(directory, filename)
         if not os.path.exists(file_path):
             return "File not found", 404
-        
-        encrypt_file_with_js(directory+"/"+filename,config.ENCODE_PASS)
-        index = filename.rfind('.')  # Находим индекс последней точки
-        filename = filename[:index] + 's' + filename[index:]
-        directory = os.path.dirname(os.path.abspath(__file__))
         print(directory)
-        return send_from_directory(directory, filename, as_attachment=True)
+
+        if encode_mod == 1:
+            encrypt_file_with_js(directory+"/"+filename,config.ENCODE_PASS)
+            index = filename.rfind('.')  # Находим индекс последней точки
+            filename = filename[:index] + 's' + filename[index:]
+            directory = os.path.dirname(os.path.abspath(__file__))
+            return send_from_directory(directory, filename, as_attachment=True)
+        else:
+            return send_from_directory(directory, filename, as_attachment=True)
 
     except Exception as e:
         app.logger.error(f"Error downloading file: {str(e)}")
@@ -281,6 +287,4 @@ def open_encode():
    return render_template('encode.html')
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0',
-    port=100,
-    ssl_context=('sertificats/certificate.crt', 'sertificats/certificate.key'))
+    app.run(host='0.0.0.0', port=100, ssl_context=('sertificats/certificate.crt', 'sertificats/certificate.key'))
