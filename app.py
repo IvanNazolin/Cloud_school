@@ -24,16 +24,15 @@ cursor = bd.cursor()
 cursor.execute("SELECT base_dir FROM config WHERE id = 1")
 # Укажите корневой каталог для сканирования
 BASE_DIR = os.path.expanduser((cursor.fetchone())[0])
-
-# Учетные данные для входа (пароль будет хешироваться)
-cursor.execute("SELECT username FROM config WHERE id = 1")
-USERNAME = (cursor.fetchone())[0]
-cursor.execute("SELECT password_hash FROM config WHERE id = 1")
-PASSWORD_HASH = (cursor.fetchone())[0]  # Пароль должен быть захеширован заранее в config
-
 # Специальные данные для доступа к настройкам
 SETTINGS_USERNAME = 'admin'
 SETTINGS_PASSWORD = 'admin'  # Задайте свой пароль для доступа к настройкам
+
+USERNAME = ''
+PASSWORD_HASH = ''  
+
+
+bd.close()
 
 # Секретный ключ для работы с сессиями
 app.secret_key = 'your_secret_key'
@@ -57,9 +56,9 @@ def encrypt_file_with_js(file_path, password):
         print("Error:", result.stderr)
 
 
-def check_auth(username, password):
+def check_auth(username, password, password_hash):
     """Функция для проверки аутентификационных данных"""
-    return username == config.USERNAME and hmac.compare_digest(PASSWORD_HASH, hashlib.sha256(password.encode()).hexdigest())
+    return username == config.USERNAME and hmac.compare_digest(password_hash, hashlib.sha256(password.encode()).hexdigest())
 
 def requires_auth(f):
     @wraps(f)
@@ -75,12 +74,20 @@ def login():
     if request.method == 'POST':
         username = request.form['username']
         password = request.form['password']
+        bd = sqlite3.connect('cloud.db')
+        cursor = bd.cursor()
+        cursor.execute(f"SELECT password_hash FROM config WHERE username='{username}'")
+        tmp=cursor.fetchone()
+        if tmp:
+           password_hash = tmp[0] 
+        else:
+            return "пользователь не был найден ", 404
 
         if username == SETTINGS_USERNAME and password == SETTINGS_PASSWORD:
             # Если введены специальные данные, перенаправляем на страницу настроек
             session['username'] = username
             return redirect(url_for('settings'))
-        elif check_auth(username, password):
+        elif check_auth(username, password, password_hash):
             session['username'] = username
             return redirect(url_for('index'))
         else:
@@ -95,13 +102,38 @@ def settings():
     if request.method == 'POST':
         # Обработка изменения настроек, например, изменение пароля
         new_password = request.form.get('new_password')
-        if new_password:
-            # Хэшируем новый пароль и обновляем в конфиге
+        if new_password:  # Проверяем, что пароль введен
+            # Хэшируем новый пароль
             new_password_hash = hashlib.sha256(new_password.encode()).hexdigest()
-            config.PASSWORD_HASH = new_password_hash
-            return redirect(url_for('index'))
 
-    return render_template('settings.html', username=USERNAME)
+            try:
+                # Подключаемся к базе данных
+                conn = sqlite3.connect('cloud.db')  # Замените на ваш путь к базе данных
+                cursor = conn.cursor()
+
+                # SQL-запрос для обновления значения пароля в таблице config
+                cursor.execute('''
+                    UPDATE config
+                    SET password_hash = ?
+                ''', (new_password_hash,))
+
+                # Сохраняем изменения
+                conn.commit()
+
+                # Закрываем соединение
+                conn.close()
+
+                # Перенаправляем на главную страницу после успешного обновления пароля
+                return redirect(url_for('index'))
+
+            except sqlite3.Error as e:
+                print(f"Ошибка базы данных: {e}")  # Выводим ошибку в консоль
+                return f"Ошибка базы данных: {e}", 500  # Возвращаем ошибку с описанием
+
+        else:
+            return "Пароль не был введен.", 400
+
+    return render_template('settings.html', username=USERNAME)  # Передаем в шаблон переменную USERNAME
 
 
 @app.route('/')
