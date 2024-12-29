@@ -12,6 +12,9 @@ example/
 *.crt
 *.csr
 *.key
+*.db
+
+cloud.db
 
 # Игнорировать логи
 *.log
