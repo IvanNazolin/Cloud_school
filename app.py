@@ -21,7 +21,7 @@ talisman = Talisman(app, force_https=True)
 bd = sqlite3.connect('cloud.db')
 cursor = bd.cursor()
 
-cursor.execute("SELECT base_dir FROM config WHERE id = 1")
+cursor.execute("SELECT base_dir_level_1 FROM config WHERE id = 1")
 # Укажите корневой каталог для сканирования
 BASE_DIR = os.path.expanduser((cursor.fetchone())[0])
 # Специальные данные для доступа к настройкам
@@ -58,7 +58,7 @@ def encrypt_file_with_js(file_path, password):
 
 def check_auth(username, password, password_hash):
     """Функция для проверки аутентификационных данных"""
-    return username == config.USERNAME and hmac.compare_digest(password_hash, hashlib.sha256(password.encode()).hexdigest())
+    return  hmac.compare_digest(password_hash, hashlib.sha256(password.encode()).hexdigest())
 
 def requires_auth(f):
     @wraps(f)
@@ -72,7 +72,9 @@ def requires_auth(f):
 def login():
     """Реализация аутентификации через форму"""
     if request.method == 'POST':
+        Apassword_hash = ""
         username = request.form['username']
+        username = hashlib.sha256(username.encode()).hexdigest()
         password = request.form['password']
         bd = sqlite3.connect('cloud.db')
         cursor = bd.cursor()
@@ -80,15 +82,23 @@ def login():
         tmp=cursor.fetchone()
         if tmp:
            password_hash = tmp[0] 
-        else:
-            return "пользователь не был найден ", 404
 
-        if username == SETTINGS_USERNAME and password == SETTINGS_PASSWORD:
+        cursor.execute(f"SELECT Admin_pass FROM config WHERE Admin_id='{username}'")
+        tmp=cursor.fetchone()
+        if tmp:
+            Apassword_hash = tmp[0]
+            print("пароль есть")
+            
+
+        print("проверка аутетификации")
+        if check_auth(username, password, Apassword_hash):
             # Если введены специальные данные, перенаправляем на страницу настроек
             session['username'] = username
             return redirect(url_for('settings'))
         elif check_auth(username, password, password_hash):
             session['username'] = username
+            ip_address = request.remote_addr  # Получаем IP-адрес пользователя
+            print(f"Авторизация успешна с IP-адреса: {ip_address}")
             return redirect(url_for('index'))
         else:
             return render_template('login.html', error="Invalid credentials")
@@ -100,40 +110,81 @@ def login():
 def settings():
     """Страница настроек"""
     if request.method == 'POST':
-        # Обработка изменения настроек, например, изменение пароля
+        # Переменные для хранения новых значений
+
+        new_username = request.form.get('new_username')
         new_password = request.form.get('new_password')
-        if new_password:  # Проверяем, что пароль введен
-            # Хэшируем новый пароль
-            new_password_hash = hashlib.sha256(new_password.encode()).hexdigest()
+        
+        new_admin_name = request.form.get('new_admin_name')
+        new_admin_password = request.form.get('new_admin_password')
 
-            try:
-                # Подключаемся к базе данных
-                conn = sqlite3.connect('cloud.db')  # Замените на ваш путь к базе данных
-                cursor = conn.cursor()
+        encryption_mode = request.form.get('encryption_mode')      
+        
+        # Подключаемся к базе данных
+        try:
+            conn = sqlite3.connect('cloud.db')  # Путь к вашей базе данных
+            cursor = conn.cursor()
 
-                # SQL-запрос для обновления значения пароля в таблице config
-                cursor.execute('''
+            if new_username:
+                new_username_hash = hashlib.sha256(new_username.encode()).hexdigest()
+                cursor.execute(f'''
+                    UPDATE config
+                    SET username = ?
+                    WHERE id = 1
+                ''',(new_username_hash,))
+
+            if new_admin_name:
+                new_admin_name_hash = hashlib.sha256(new_admin_name.encode()).hexdigest()
+                cursor.execute(f'''
+                    UPDATE config
+                    SET Admin_id = ?
+                    WHERE id = 1
+                ''',(new_admin_name_hash,))
+
+            if new_admin_password:
+                new_admin_password_hash = hashlib.sha256(new_admin_password.encode()).hexdigest()
+                cursor.execute(f'''
+                    UPDATE config
+                    SET Admin_pass = ?
+                    WHERE id = 1
+                ''',(new_admin_password_hash,))
+
+            if new_password:
+                new_password_hash = hashlib.sha256(new_password.encode()).hexdigest()
+                cursor.execute(f'''
                     UPDATE config
                     SET password_hash = ?
-                ''', (new_password_hash,))
+                    WHERE id = 1
+                ''',(new_password_hash,))
 
-                # Сохраняем изменения
-                conn.commit()
+            if int(encryption_mode) == 1:
+                cursor.execute(f'''
+                    UPDATE config
+                    SET encryption_mode = ?
+                    WHERE id = 1
+                ''',(1,))
+            elif int(encryption_mode) == 0:
+                cursor.execute(f'''
+                    UPDATE config
+                    SET encryption_mode = ?
+                    WHERE id = 1
+                ''',(0,))
 
-                # Закрываем соединение
-                conn.close()
+            # Сохраняем изменения
+            conn.commit()
+            conn.close()
 
-                # Перенаправляем на главную страницу после успешного обновления пароля
-                return redirect(url_for('index'))
+            # Перенаправляем на страницу настроек
+            return redirect(url_for('settings'))
 
-            except sqlite3.Error as e:
-                print(f"Ошибка базы данных: {e}")  # Выводим ошибку в консоль
-                return f"Ошибка базы данных: {e}", 500  # Возвращаем ошибку с описанием
+        except sqlite3.Error as e:
+            print(f"Ошибка базы данных: {e}")
+            return f"Ошибка базы данных: {e}", 500  # Возвращаем ошибку с описанием
+            
 
-        else:
-            return "Пароль не был введен.", 400
 
-    return render_template('settings.html', username=USERNAME)  # Передаем в шаблон переменную USERNAME
+
+    return render_template('settings.html', username=USERNAME)
 
 
 @app.route('/')
@@ -182,6 +233,11 @@ def download_file(filepath):
         if not os.path.exists(file_path):
             return "File not found", 404
         print(directory)
+        bd = sqlite3.connect('cloud.db')
+        cursor = bd.cursor()
+        cursor.execute("SELECT base_dir FROM encryption_mode WHERE id = 1")
+        encode_mod = int(cursor.fetchone()[0])
+        bd.close()
 
         if encode_mod == 1:
             encrypt_file_with_js(directory+"/"+filename,config.ENCODE_PASS)
@@ -320,3 +376,4 @@ def open_encode():
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=100, ssl_context=('sertificats/certificate.crt', 'sertificats/certificate.key'))
+    
