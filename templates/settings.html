@@ -3,74 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='settings.css') }}">
     <title>Settings</title>
-    <style>
-        /* Сброс стилей */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        /* Центрирование всего содержимого */
-        body, html {
-            height: 100%;
-            display: flex;
-            justify-content: center;  /* Центрирование по горизонтали */
-            align-items: center;      /* Центрирование по вертикали */
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0; /* Фон страницы */
-        }
-
-        /* Стиль для контейнера формы */
-        form {
-            text-align: left;
-            background-color: rgb(179, 48, 48);
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: 100%;
-            max-width: 600px; /* Максимальная ширина формы */
-        }
-
-        /* Стиль для заголовка */
-        h1 {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        /* Внешний вид полей формы */
-        label {
-            display: block;
-            margin-bottom: 5px;
-            font-weight: bold;
-        }
-
-        input[type="text"], input[type="password"], select {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-
-        /* Стиль для кнопки */
-        button {
-            display: block;
-            width: 100%;
-            padding: 10px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #45a049;
-        }
-    </style>
 </head>
 <body>
     <div>
@@ -78,6 +12,16 @@
         <p>Welcome, {{ username }}!</p>
 
         <form method="POST">
+            <!-- Выбор пользователя по user_id -->
+            <label for="selected_user_id">Выберите пользователя:</label>
+            <select name="selected_user_id" id="selected_user_id">
+                <option value="">Текущий пользователь</option>
+                {% for user in users %}
+                    <option value="{{ user[0] }}">{{ user[0] }}</option>
+                {% endfor %}
+            </select>
+            <br><br>
+            
             <!-- Change username -->
             <label for="new_username">Новое имя пользователя:</label>
             <input type="text" name="new_username" id="new_username">

@@ -118,9 +118,10 @@ def login():
 @requires_auth
 def settings():
     """Страница настроек"""
+    user = list()
     if request.method == 'POST':
-        # Переменные для хранения новых значений
-
+        # Получаем выбранного пользователя по user_id
+        selected_user_id = request.form.get('selected_user_id')
         new_username = request.form.get('new_username')
         new_password = request.form.get('new_password')
         
@@ -134,50 +135,74 @@ def settings():
             conn = sqlite3.connect('cloud.db')  # Путь к вашей базе данных
             cursor = conn.cursor()
 
+
+            # Если выбран пользователь, применяем изменения к нему
+            if selected_user_id:
+                # Применяем изменения к выбранному пользователю
+                cursor.execute('SELECT username FROM config WHERE user_id = ?', (selected_user_id,))
+                user = cursor.fetchone()
+                if user:
+                    user = user[0]  # Получаем имя пользователя
+                else:
+                    user = session.get('username')  # Если user_id не найден, применяем изменения к текущему пользователю
+            else:
+                user = session.get('username')  # Если не выбрали, изменения для текущего пользователя
+
+            # Обновляем имя пользователя, если оно указано
             if new_username:
                 new_username_hash = hashlib.sha256(new_username.encode()).hexdigest()
-                cursor.execute(f'''
+                cursor.execute('''
                     UPDATE config
                     SET username = ?
-                    WHERE id = 1
-                ''',(new_username_hash,))
+                    WHERE user_id = ?
+                ''', (new_username_hash, selected_user_id))
 
+                cursor.execute('''
+                    UPDATE config
+                    SET user_id = ?
+                    WHERE user_id = ?
+                ''', (new_username, selected_user_id))
+
+            # Обновляем пароль пользователя, если оно указано
+            if new_password:
+                new_password_hash = hashlib.sha256(new_password.encode()).hexdigest()
+                cursor.execute('''
+                    UPDATE config
+                    SET password_hash = ?
+                    WHERE user_id = ?
+                ''', (new_password_hash, selected_user_id))
+
+            # Обновляем имя администратора, если оно указано
             if new_admin_name:
                 new_admin_name_hash = hashlib.sha256(new_admin_name.encode()).hexdigest()
-                cursor.execute(f'''
+                cursor.execute('''
                     UPDATE config
                     SET Admin_id = ?
                     WHERE id = 1
-                ''',(new_admin_name_hash,))
+                ''', (new_admin_name_hash,))
 
+            # Обновляем пароль администратора, если оно указано
             if new_admin_password:
                 new_admin_password_hash = hashlib.sha256(new_admin_password.encode()).hexdigest()
-                cursor.execute(f'''
+                cursor.execute('''
                     UPDATE config
                     SET Admin_pass = ?
                     WHERE id = 1
-                ''',(new_admin_password_hash,))
+                ''', (new_admin_password_hash,))
 
-            if new_password:
-                new_password_hash = hashlib.sha256(new_password.encode()).hexdigest()
-                cursor.execute(f'''
-                    UPDATE config
-                    SET password_hash = ?
-                    WHERE id = 1
-                ''',(new_password_hash,))
-
+            # Обновляем режим шифрования, если указано
             if int(encryption_mode) == 1:
-                cursor.execute(f'''
+                cursor.execute('''
                     UPDATE config
                     SET encryption_mode = ?
                     WHERE id = 1
-                ''',(1,))
+                ''', (1,))
             elif int(encryption_mode) == 0:
-                cursor.execute(f'''
+                cursor.execute('''
                     UPDATE config
                     SET encryption_mode = ?
                     WHERE id = 1
-                ''',(0,))
+                ''', (0,))
 
             # Сохраняем изменения
             conn.commit()
@@ -189,11 +214,22 @@ def settings():
         except sqlite3.Error as e:
             print(f"Ошибка базы данных: {e}")
             return f"Ошибка базы данных: {e}", 500  # Возвращаем ошибку с описанием
-            
+
+    # Подключаемся к базе данных для получения всех авторизованных пользователей
+    try:
+        conn = sqlite3.connect('cloud.db')
+        cursor = conn.cursor()
+        cursor.execute('SELECT user_id, username FROM config')  # Получаем user_id и username всех пользователей
+        users = cursor.fetchall()
+        conn.close()
+
+    except sqlite3.Error as e:
+        print(f"Ошибка базы данных: {e}")
+        users = []
+    print(users)
+    return render_template('settings.html', username=('Administrator'), users=users)
 
 
-
-    return render_template('settings.html', username=USERNAME)
 
 
 @app.route('/')
