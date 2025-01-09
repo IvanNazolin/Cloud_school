@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(
+        15deg,
+        hsl(55deg 90% 48%) 0%,
+        hsl(65deg 87% 45%) 21%,
+        hsl(76deg 83% 42%) 33%,
+        hsl(86deg 79% 40%) 41%,
+        hsl(96deg 76% 37%) 47%,
+        hsl(107deg 72% 34%) 51%,
+        hsl(117deg 69% 31%) 55%,
+        hsl(126deg 65% 28%) 58%,
+        hsl(137deg 63% 25%) 61%,
+        hsl(147deg 58% 22%) 64%,
+        hsl(158deg 55% 19%) 68%,
+        hsl(169deg 52% 16%) 74%,
+        hsl(178deg 48% 14%) 96%
+    );
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 80%;
+    background-color: #ffffff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+}
+
+p {
+    text-align: center;
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+form {
+    width: 100%;
+    background-color: #ffffff;
+    padding: 45px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 9px;
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #333;
+}
+
+input[type="text"], input[type="password"], select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, select:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    box-sizing: border-box;
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-image: linear-gradient(
+        45deg,
+        hsl(55deg 90% 48%) 0%,
+        hsl(55deg 90% 44%) 0%,
+        hsl(55deg 90% 40%) 0%,
+        hsl(55deg 90% 36%) 0%,
+        hsl(55deg 90% 32%) 1%,
+        hsl(55deg 90% 28%) 2%,
+        hsl(55deg 90% 24%) 6%,
+        hsl(55deg 90% 20%) 25%,
+        hsl(55deg 90% 16%) 63%,
+        hsl(55deg 90% 12%) 77%,
+        hsl(55deg 90% 8%) 86%,
+        hsl(54deg 90% 4%) 93%,
+        hsl(0deg 0% 0%) 100%
+    );
+    color: #fff;
+    border-radius: 25px;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+    background-image: linear-gradient(
+        15deg,
+        hsl(55deg 95% 84%) 0%,
+        hsl(65deg 91% 78%) 7%,
+        hsl(75deg 87% 72%) 14%,
+        hsl(86deg 84% 66%) 21%,
+        hsl(96deg 79% 60%) 27%,
+        hsl(106deg 75% 54%) 34%,
+        hsl(116deg 72% 48%) 40%,
+        hsl(127deg 68% 43%) 47%,
+        hsl(137deg 64% 37%) 54%,
+        hsl(147deg 59% 31%) 61%,
+        hsl(158deg 56% 25%) 69%,
+        hsl(168deg 52% 19%) 79%,
+        hsl(178deg 48% 14%) 100%
+    );
+    transform: translateY(-2px);
+}
+
+button:active {
+    background-color: #004085;
+    transform: translateY(0);
+}
+
+select {
+    width: auto;
+}
+
+select, input[type="text"], input[type="password"] {
+    display: inline-block;
+}
+
+br {
+    clear: both;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}

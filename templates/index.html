@@ -12,30 +12,30 @@
         <h1>{{ current_folder }}</h1>
         <div class="buttons">
             {% if subpath %}
-                <a class="button back" href="{{ url_for('index', subpath=os.path.dirname(subpath)) }}">Back</a>
+                <a class="button back" href="{{ url_for('index', subpath=os.path.dirname(subpath)) }}">Назад</a>
             {% endif %}
             {% if subpath %}
-                <a class="button download-folder" href="{{ url_for('download_folder', folderpath=subpath) }}">Download Current Folder</a>
+                <a class="button download-folder" href="{{ url_for('download_folder', folderpath=subpath) }}">Скачать эту папку</a>
             {% else %}
-                <a class="button download-folder" href="{{ url_for('download_folder', folderpath='') }}">Download Root Folder</a>
+                <a class="button download-folder" href="{{ url_for('download_folder', folderpath='') }}">Скачать корневую папку</a>
             {% endif %}
             <form action="{{ url_for('upload_file') }}" method="post" enctype="multipart/form-data" class="upload-form">
                 <input type="hidden" name="subpath" value="{{ subpath }}">
                 <input type="file" name="file" id="file-input" hidden>
-                <label for="file-input" class="button upload-button">Choose File</label>
-                <button type="submit" class="button upload-submit">Upload</button>
+                <label for="file-input" class="button upload-button">Выбрать файл</label>
+                <button type="submit" class="button upload-submit">Загрузить</button>
             </form>     
                  
             <!-- Folder creation form -->
             <form action="{{ url_for('create_folder') }}" method="post" class="create-folder-form">
                 <input type="hidden" name="subpath" value="{{ subpath }}">
-                <input type="text" name="folder_name" placeholder="New folder name" required>
-                <button type="submit" class="button create-folder-submit">Create Folder</button>
+                <input type="text" name="folder_name" placeholder="Новое имя папки" required>
+                <button type="submit" class="button create-folder-submit">Создать папку</button>
             </form>
 
             <!-- Button to open encode.html in a new window -->
-            <a class="button open-file" href="{{ url_for('open_encode') }}" target="_blank">Decode file</a>
-            <a class="button log out" href="{{ url_for('logout') }}" target="_blank">Log out</a>
+            <a class="button open-file" href="{{ url_for('open_encode') }}" target="_blank">Расшифровать файл</a>
+            <a class="button log out" href="{{ url_for('logout') }}" target="_blank">Завершить работу</a>
 
             <script>
                 function openFile() {

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Авторизация</title>
     <!-- Подключаем отдельный CSS файл для страницы логина -->
     <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
 </head>
@@ -21,7 +21,7 @@
                 <input type="password" id="password" name="password" class="form-control" required>
             </div>
             <div class="form-group">
-                <button type="submit" class="login-button">Login</button>
+                <button type="submit" class="login-button">Логин</button>
             </div>
             {% if error %}
                 <p class="error-message">{{ error }}</p>
