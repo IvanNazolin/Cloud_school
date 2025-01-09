@@ -75,7 +75,22 @@ h1 {
 .custom-file-upload {
     display: inline-block;
     padding: 12px 20px;
-    background-color: #007bff;
+  background-image: linear-gradient(
+    15deg,
+    hsl(55deg 90% 48%) 0%,
+    hsl(65deg 87% 45%) 21%,
+    hsl(76deg 83% 42%) 33%,
+    hsl(86deg 79% 40%) 41%,
+    hsl(96deg 76% 37%) 47%,
+    hsl(107deg 72% 34%) 51%,
+    hsl(117deg 69% 31%) 55%,
+    hsl(126deg 65% 28%) 58%,
+    hsl(137deg 63% 25%) 61%,
+    hsl(147deg 58% 22%) 64%,
+    hsl(158deg 55% 19%) 68%,
+    hsl(169deg 52% 16%) 74%,
+    hsl(178deg 48% 14%) 96%
+  );
     color: white;
     font-size: 14px;
     border-radius: 5px;
@@ -104,8 +119,23 @@ h1 {
     padding: 12px;
     font-size: 14px;
     border-radius: 5px;
-    border: 1px solid #007bff;
-    background-color: #007bff;
+    border: 0px solid #007bff;
+      background-image: linear-gradient(
+    15deg,
+    hsl(55deg 90% 48%) 0%,
+    hsl(65deg 87% 45%) 21%,
+    hsl(76deg 83% 42%) 33%,
+    hsl(86deg 79% 40%) 41%,
+    hsl(96deg 76% 37%) 47%,
+    hsl(107deg 72% 34%) 51%,
+    hsl(117deg 69% 31%) 55%,
+    hsl(126deg 65% 28%) 58%,
+    hsl(137deg 63% 25%) 61%,
+    hsl(147deg 58% 22%) 64%,
+    hsl(158deg 55% 19%) 68%,
+    hsl(169deg 52% 16%) 74%,
+    hsl(178deg 48% 14%) 96%
+  );
     color: white;
     cursor: pointer;
     transition: background-color 0.3s ease;

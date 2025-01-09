@@ -78,25 +78,33 @@ def login():
         password = request.form['password']
         bd = sqlite3.connect('cloud.db')
         cursor = bd.cursor()
+
+        # Получаем хэш пароля для пользователя
         cursor.execute(f"SELECT password_hash FROM config WHERE username='{username}'")
-        tmp=cursor.fetchone()
+        tmp = cursor.fetchone()
         if tmp:
-           password_hash = tmp[0] 
+            password_hash = tmp[0]
+
+        # Получаем папку, к которой имеет доступ пользователь
+        cursor.execute(f"SELECT base_dir_level_1 FROM config WHERE username='{username}'")
+        tmp = cursor.fetchone()
+        folder_path = tmp[0] if tmp else None
 
         cursor.execute(f"SELECT Admin_pass FROM config WHERE Admin_id='{username}'")
-        tmp=cursor.fetchone()
+        tmp = cursor.fetchone()
         if tmp:
             Apassword_hash = tmp[0]
             print("пароль есть")
-            
 
-        print("проверка аутетификации")
+        print("проверка аутентификации")
         if check_auth(username, password, Apassword_hash):
             # Если введены специальные данные, перенаправляем на страницу настроек
             session['username'] = username
+            session['folder_path'] = folder_path  # Сохраняем путь к папке в сессии
             return redirect(url_for('settings'))
         elif check_auth(username, password, password_hash):
             session['username'] = username
+            session['folder_path'] = folder_path  # Сохраняем путь к папке в сессии
             ip_address = request.remote_addr  # Получаем IP-адрес пользователя
             print(f"Авторизация успешна с IP-адреса: {ip_address}")
             return redirect(url_for('index'))
@@ -104,6 +112,7 @@ def login():
             return render_template('login.html', error="Invalid credentials")
 
     return render_template('login.html')
+
 
 @app.route('/settings', methods=['GET', 'POST'])
 @requires_auth
@@ -192,7 +201,13 @@ def settings():
 @requires_auth
 def index(subpath=''):
     """Основная страница"""
-    full_path = os.path.join(BASE_DIR, subpath)
+    # Получаем путь к папке, к которой имеет доступ пользователь
+    user_folder_path = session.get('folder_path', '')
+    if not user_folder_path:
+        return "Access denied", 403  # Если папка не найдена, отказ в доступе
+
+    # Путь до папки для отображения (пользователь не может выйти за пределы своей папки)
+    full_path = os.path.join(BASE_DIR, user_folder_path, subpath)
 
     if not os.path.exists(full_path):
         return "Directory not found", 404
@@ -235,7 +250,7 @@ def download_file(filepath):
         print(directory)
         bd = sqlite3.connect('cloud.db')
         cursor = bd.cursor()
-        cursor.execute("SELECT base_dir FROM encryption_mode WHERE id = 1")
+        cursor.execute("SELECT encryption_mode FROM config WHERE id = 1")
         encode_mod = int(cursor.fetchone()[0])
         bd.close()
 

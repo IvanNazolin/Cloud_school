@@ -25,7 +25,7 @@
         /* Стиль для контейнера формы */
         form {
             text-align: left;
-            background-color: white;
+            background-color: rgb(179, 48, 48);
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -79,33 +79,33 @@
 
         <form method="POST">
             <!-- Change username -->
-            <label for="new_username">New Username:</label>
+            <label for="new_username">Новое имя пользователя:</label>
             <input type="text" name="new_username" id="new_username">
             <br><br>
             
             <!-- Change password -->
-            <label for="new_password">New Password:</label>
+            <label for="new_password">Новый пароль пользователя:</label>
             <input type="password" name="new_password" id="new_password">
             <br><br>
 
             <!-- Change admin name -->
-            <label for="new_admin_name">New Admin Name:</label>
+            <label for="new_admin_name">Новое имя админа:</label>
             <input type="text" name="new_admin_name" id="new_admin_name">
             <br><br>
 
             <!-- Change admin password -->
-            <label for="new_admin_password">New Admin Password:</label>
+            <label for="new_admin_password">Новый пароль админа:</label>
             <input type="password" name="new_admin_password" id="new_admin_password">
             <br><br>
 
             <!-- Change encryption mode -->
-            <label for="encryption_mode">Enable Encryption:</label>
+            <label for="encryption_mode">Активировать шифрование:</label>
             <select name="encryption_mode" id="encryption_mode">
-                <option value="1">Yes</option>
-                <option value="0">No</option>
+                <option value="1">Да</option>
+                <option value="0">Нет</option>
             </select>
             <br><br>
-            <button type="submit">Save Changes</button>
+            <button type="submit">Сохранить изменения</button>
         </form>
     </div>
 </body>
