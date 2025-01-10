@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>File Encryption and Decryption</title>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='encode.css') }}">
@@ -29,7 +30,7 @@
             <button id="encryptButton">Зашифровать</button>
             <button id="decryptButton">Расшифровать</button>
         </div>
-
+        <a class="button log out" href="{{ url_for('logout') }}">Вернуться</a>
         <p id="status"></p>
     </div>
 

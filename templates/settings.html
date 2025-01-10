@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='settings.css') }}">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
     <title>Settings</title>
 </head>
 <body>
     <div>
         <h1>Settings</h1>
         <p>Welcome, {{ username }}!</p>
-
         <form method="POST">
+            <a class="button log out" href="{{ url_for('logout') }}">Вернуться</a>
+
             <!-- Выбор пользователя по user_id -->
             <label for="selected_user_id">Выберите пользователя:</label>
             <select name="selected_user_id" id="selected_user_id">
@@ -21,7 +23,6 @@
                 {% endfor %}
             </select>
             <br><br>
-            
             <!-- Change username -->
             <label for="new_username">Новое имя пользователя:</label>
             <input type="text" name="new_username" id="new_username">

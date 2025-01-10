@@ -74,32 +74,51 @@ h1 {
 /* Кастомная кнопка загрузки файла */
 .custom-file-upload {
     display: inline-block;
-    padding: 12px 20px;
+    padding: 10px 20px;
   background-image: linear-gradient(
-    15deg,
+    45deg,
     hsl(55deg 90% 48%) 0%,
-    hsl(65deg 87% 45%) 21%,
-    hsl(76deg 83% 42%) 33%,
-    hsl(86deg 79% 40%) 41%,
-    hsl(96deg 76% 37%) 47%,
-    hsl(107deg 72% 34%) 51%,
-    hsl(117deg 69% 31%) 55%,
-    hsl(126deg 65% 28%) 58%,
-    hsl(137deg 63% 25%) 61%,
-    hsl(147deg 58% 22%) 64%,
-    hsl(158deg 55% 19%) 68%,
-    hsl(169deg 52% 16%) 74%,
-    hsl(178deg 48% 14%) 96%
+    hsl(55deg 90% 44%) 0%,
+    hsl(55deg 90% 40%) 0%,
+    hsl(55deg 90% 36%) 0%,
+    hsl(55deg 90% 32%) 1%,
+    hsl(55deg 90% 28%) 2%,
+    hsl(55deg 90% 24%) 6%,
+    hsl(55deg 90% 20%) 25%,
+    hsl(55deg 90% 16%) 63%,
+    hsl(55deg 90% 12%) 77%,
+    hsl(55deg 90% 8%) 86%,
+    hsl(54deg 90% 4%) 93%,
+    hsl(0deg 0% 0%) 100%
   );
-    color: white;
-    font-size: 14px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    width: 100%;
-    box-sizing: border-box;
+    color: #fff;
+    border-radius: 25px;
+    text-decoration: none;
     text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
+
+.custom-file-upload:hover {
+    background-image: linear-gradient(
+      15deg,
+      hsl(55deg 95% 84%) 0%,
+      hsl(65deg 91% 78%) 7%,
+      hsl(75deg 87% 72%) 14%,
+      hsl(86deg 84% 66%) 21%,
+      hsl(96deg 79% 60%) 27%,
+      hsl(106deg 75% 54%) 34%,
+      hsl(116deg 72% 48%) 40%,
+      hsl(127deg 68% 43%) 47%,
+      hsl(137deg 64% 37%) 54%,
+      hsl(147deg 59% 31%) 61%,
+      hsl(158deg 56% 25%) 69%,
+      hsl(168deg 52% 19%) 79%,
+      hsl(178deg 48% 14%) 100%
+    );
+      transform: translateY(-2px);
+  }
+
 
 .custom-file-upload:hover {
     background-color: #0056b3;
@@ -116,38 +135,51 @@ h1 {
 }
 
 .button-container button {
-    padding: 12px;
-    font-size: 14px;
-    border-radius: 5px;
-    border: 0px solid #007bff;
-      background-image: linear-gradient(
-    15deg,
+    display: inline-block;
+    padding: 10px 20px;
+  background-image: linear-gradient(
+    45deg,
     hsl(55deg 90% 48%) 0%,
-    hsl(65deg 87% 45%) 21%,
-    hsl(76deg 83% 42%) 33%,
-    hsl(86deg 79% 40%) 41%,
-    hsl(96deg 76% 37%) 47%,
-    hsl(107deg 72% 34%) 51%,
-    hsl(117deg 69% 31%) 55%,
-    hsl(126deg 65% 28%) 58%,
-    hsl(137deg 63% 25%) 61%,
-    hsl(147deg 58% 22%) 64%,
-    hsl(158deg 55% 19%) 68%,
-    hsl(169deg 52% 16%) 74%,
-    hsl(178deg 48% 14%) 96%
+    hsl(55deg 90% 44%) 0%,
+    hsl(55deg 90% 40%) 0%,
+    hsl(55deg 90% 36%) 0%,
+    hsl(55deg 90% 32%) 1%,
+    hsl(55deg 90% 28%) 2%,
+    hsl(55deg 90% 24%) 6%,
+    hsl(55deg 90% 20%) 25%,
+    hsl(55deg 90% 16%) 63%,
+    hsl(55deg 90% 12%) 77%,
+    hsl(55deg 90% 8%) 86%,
+    hsl(54deg 90% 4%) 93%,
+    hsl(0deg 0% 0%) 100%
   );
-    color: white;
+    color: #fff;
+    border-radius: 25px;
+    text-decoration: none;
+    text-align: center;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    width: 48%;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
+
 
 .button-container button:hover {
-    background-color: #0056b3;
-}
-
-.button-container button:active {
-    background-color: #004085;
+    background-image: linear-gradient(
+        15deg,
+        hsl(55deg 95% 84%) 0%,
+        hsl(65deg 91% 78%) 7%,
+        hsl(75deg 87% 72%) 14%,
+        hsl(86deg 84% 66%) 21%,
+        hsl(96deg 79% 60%) 27%,
+        hsl(106deg 75% 54%) 34%,
+        hsl(116deg 72% 48%) 40%,
+        hsl(127deg 68% 43%) 47%,
+        hsl(137deg 64% 37%) 54%,
+        hsl(147deg 59% 31%) 61%,
+        hsl(158deg 56% 25%) 69%,
+        hsl(168deg 52% 19%) 79%,
+        hsl(178deg 48% 14%) 100%
+      );
+        transform: translateY(-2px);
 }
 
 /* Статусный текст */
@@ -161,4 +193,59 @@ h1 {
 /* Кастомизация для ошибок */
 #status.error {
     color: red;
+}
+
+.log.out {
+    display: inline-block;
+    padding: 10px 20px;
+    background-image: linear-gradient(
+        45deg,
+        hsl(55deg 90% 48%) 0%,
+        hsl(55deg 90% 44%) 0%,
+        hsl(55deg 90% 40%) 0%,
+        hsl(55deg 90% 36%) 0%,
+        hsl(55deg 90% 32%) 1%,
+        hsl(55deg 90% 28%) 2%,
+        hsl(55deg 90% 24%) 6%,
+        hsl(55deg 90% 20%) 25%,
+        hsl(55deg 90% 16%) 63%,
+        hsl(55deg 90% 12%) 77%,
+        hsl(55deg 90% 8%) 86%,
+        hsl(54deg 90% 4%) 93%,
+        hsl(0deg 0% 0%) 100%
+    );
+    color: #fff;
+    border-radius: 25px;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+
+.log.out:hover {
+    background-image: linear-gradient(
+        15deg,
+        hsl(55deg 95% 84%) 0%,
+        hsl(65deg 91% 78%) 7%,
+        hsl(75deg 87% 72%) 14%,
+        hsl(86deg 84% 66%) 21%,
+        hsl(96deg 79% 60%) 27%,
+        hsl(106deg 75% 54%) 34%,
+        hsl(116deg 72% 48%) 40%,
+        hsl(127deg 68% 43%) 47%,
+        hsl(137deg 64% 37%) 54%,
+        hsl(147deg 59% 31%) 61%,
+        hsl(158deg 56% 25%) 69%,
+        hsl(168deg 52% 19%) 79%,
+        hsl(178deg 48% 14%) 100%
+    );
+       transform: translateY(8px); 
+}
+
+.log.out {
+    width: 100%;
+    box-sizing: border-box;
+    transform: translateY(10px); 
 }

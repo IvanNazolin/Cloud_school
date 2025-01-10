@@ -73,6 +73,7 @@ def login():
     """Реализация аутентификации через форму"""
     if request.method == 'POST':
         Apassword_hash = ""
+        password_hash=""
         username = request.form['username']
         username = hashlib.sha256(username.encode()).hexdigest()
         password = request.form['password']
@@ -426,5 +427,5 @@ def open_encode():
    return render_template('encode.html')
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=100, ssl_context=('sertificats/certificate.crt', 'sertificats/certificate.key'))
+    app.run(host='0.0.0.0' , port=443, ssl_context=('sertificats/certificate.crt', 'sertificats/certificate.key'))
     
