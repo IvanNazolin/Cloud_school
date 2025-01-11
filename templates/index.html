@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
     <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
 </head>
+
 <body>
     <div class="container">
         <h1>{{ current_folder }}</h1>
@@ -35,7 +36,7 @@
             </form>
 
             <!-- Button to open encode.html in a new window -->
-            <a class="button open-file" href="{{ url_for('open_encode') }}" target="_blank">Расшифровать файл</a>
+            <a class="button open-file" href="{{ url_for('open_encode') }}" >Расшифровать файл</a>
             <a class="button log out" href="{{ url_for('logout') }}" target="_blank">Завершить работу</a>
 
             <script>

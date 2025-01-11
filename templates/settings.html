@@ -14,7 +14,7 @@
         <form method="POST">
             <a class="button log out" href="{{ url_for('logout') }}">Вернуться</a>
 
-            <!-- Выбор пользователя по user_id -->
+            <!-- Настройки пользователя -->
             <label for="selected_user_id">Выберите пользователя:</label>
             <select name="selected_user_id" id="selected_user_id">
                 <option value="">Текущий пользователь</option>
@@ -23,33 +23,38 @@
                 {% endfor %}
             </select>
             <br><br>
-            <!-- Change username -->
+
             <label for="new_username">Новое имя пользователя:</label>
             <input type="text" name="new_username" id="new_username">
             <br><br>
             
-            <!-- Change password -->
             <label for="new_password">Новый пароль пользователя:</label>
             <input type="password" name="new_password" id="new_password">
             <br><br>
 
-            <!-- Change admin name -->
+            <!-- Горизонтальная линия -->
+            <hr>
+
+            <!-- Настройки админа -->
             <label for="new_admin_name">Новое имя админа:</label>
             <input type="text" name="new_admin_name" id="new_admin_name">
             <br><br>
 
-            <!-- Change admin password -->
             <label for="new_admin_password">Новый пароль админа:</label>
             <input type="password" name="new_admin_password" id="new_admin_password">
             <br><br>
 
-            <!-- Change encryption mode -->
+            <!-- Горизонтальная линия -->
+            <hr>
+
+            <!-- Настройки шифрования -->
             <label for="encryption_mode">Активировать шифрование:</label>
             <select name="encryption_mode" id="encryption_mode">
                 <option value="1">Да</option>
                 <option value="0">Нет</option>
             </select>
             <br><br>
+
             <button type="submit">Сохранить изменения</button>
         </form>
     </div>

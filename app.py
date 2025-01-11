@@ -55,7 +55,6 @@ def encrypt_file_with_js(file_path, password):
     else:
         print("Error:", result.stderr)
 
-
 def check_auth(username, password, password_hash):
     """Функция для проверки аутентификационных данных"""
     return  hmac.compare_digest(password_hash, hashlib.sha256(password.encode()).hexdigest())
@@ -114,7 +113,6 @@ def login():
 
     return render_template('login.html')
 
-
 @app.route('/settings', methods=['GET', 'POST'])
 @requires_auth
 def settings():
@@ -152,58 +150,35 @@ def settings():
             # Обновляем имя пользователя, если оно указано
             if new_username:
                 new_username_hash = hashlib.sha256(new_username.encode()).hexdigest()
-                cursor.execute('''
-                    UPDATE config
-                    SET username = ?
-                    WHERE user_id = ?
-                ''', (new_username_hash, selected_user_id))
+                cursor.execute('''UPDATE config SET username = ? WHERE user_id = ?''',
+                (new_username_hash, selected_user_id))
 
-                cursor.execute('''
-                    UPDATE config
-                    SET user_id = ?
-                    WHERE user_id = ?
-                ''', (new_username, selected_user_id))
+                cursor.execute('''UPDATE config SET user_id = ? WHERE user_id = ? ''',
+                (new_username, selected_user_id))
 
             # Обновляем пароль пользователя, если оно указано
             if new_password:
                 new_password_hash = hashlib.sha256(new_password.encode()).hexdigest()
-                cursor.execute('''
-                    UPDATE config
-                    SET password_hash = ?
-                    WHERE user_id = ?
-                ''', (new_password_hash, selected_user_id))
+                cursor.execute('''UPDATE config SET password_hash = ? WHERE user_id = ? ''',
+                (new_password_hash, selected_user_id))
 
             # Обновляем имя администратора, если оно указано
             if new_admin_name:
                 new_admin_name_hash = hashlib.sha256(new_admin_name.encode()).hexdigest()
-                cursor.execute('''
-                    UPDATE config
-                    SET Admin_id = ?
-                    WHERE id = 1
-                ''', (new_admin_name_hash,))
+                cursor.execute(''' UPDATE config SET Admin_id = ? WHERE id = 1 ''',
+                (new_admin_name_hash,))
 
             # Обновляем пароль администратора, если оно указано
             if new_admin_password:
                 new_admin_password_hash = hashlib.sha256(new_admin_password.encode()).hexdigest()
-                cursor.execute('''
-                    UPDATE config
-                    SET Admin_pass = ?
-                    WHERE id = 1
-                ''', (new_admin_password_hash,))
+                cursor.execute(''' UPDATE config SET Admin_pass = ? WHERE id = 1 ''', 
+                (new_admin_password_hash,))
 
             # Обновляем режим шифрования, если указано
             if int(encryption_mode) == 1:
-                cursor.execute('''
-                    UPDATE config
-                    SET encryption_mode = ?
-                    WHERE id = 1
-                ''', (1,))
+                cursor.execute(''' UPDATE config SET encryption_mode = ? WHERE id = 1 ''', (1,))
             elif int(encryption_mode) == 0:
-                cursor.execute('''
-                    UPDATE config
-                    SET encryption_mode = ?
-                    WHERE id = 1
-                ''', (0,))
+                cursor.execute(''' UPDATE config SET encryption_mode = ? WHERE id = 1 ''', (0,))
 
             # Сохраняем изменения
             conn.commit()
@@ -229,9 +204,6 @@ def settings():
         users = []
     print(users)
     return render_template('settings.html', username=('Administrator'), users=users)
-
-
-
 
 @app.route('/')
 @app.route('/<path:subpath>')
@@ -422,10 +394,11 @@ def create_folder():
     return redirect(url_for('index', subpath=subpath))
 
 @app.route('/open_encode')
+@requires_auth
 def open_encode():
     # Отдаем файл encode.html из папки static
    return render_template('encode.html')
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0' , port=443, ssl_context=('sertificats/certificate.crt', 'sertificats/certificate.key'))
+    app.run(host='0.0.0.0' , port=100, ssl_context=('sertificats/certificate.crt', 'sertificats/certificate.key'))
     
