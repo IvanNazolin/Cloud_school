@@ -22,9 +22,8 @@ example/
 *.swp
 
 
-
-
-
+backend/static
+backend/templates
 
 
 
