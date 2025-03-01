@@ -63,10 +63,23 @@ def login():
     password = data.get("password")
     
     hashed_password = hashlib.sha256(password.encode()).hexdigest()
+    hashed_login = hashlib.sha256(login.encode()).hexdigest()
     
-    if login in USERS and USERS[login] == hashed_password:
-        session['login'] = login  # Сохраняем информацию о пользователе в сессии
-        return jsonify({"status": "success", "message": "Вход выполнен успешно"}), 200
+    bd = sqlite3.connect('bd/cloud.db')
+    cursor = bd.cursor()
+
+    cursor.execute(f"SELECT password_hash FROM config WHERE username='{hashed_login}'")
+    tmp = cursor.fetchone()
+    if tmp:
+        password_hash = tmp[0]
+        if password_hash == hashed_password:
+
+    #if login in USERS and USERS[login] == hashed_password:
+            session['login'] = login  # Сохраняем информацию о пользователе в сессии
+            return jsonify({"status": "success", "message": "Вход выполнен успешно"}), 200
+        else:
+            return jsonify({"status": "error", "message": "Неверный логин или пароль"}), 401
+
     else:
         return jsonify({"status": "error", "message": "Неверный логин или пароль"}), 401
 
@@ -227,4 +240,5 @@ def create_folder():
 
 
 if __name__ == "__main__":
-    app.run(debug=True, host="0.0.0.0", port=100)
+    app.run(host='0.0.0.0' , port=100)
+    #app.run(host='0.0.0.0' , port=100, ssl_context=('sertificats/certificate.crt', 'sertificats/certificate.key'))

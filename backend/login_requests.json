@@ -1,0 +1,1833 @@
+[
+    {
+        "login": "user",
+        "password": "password"
+    },
+    {
+        "login": "user",
+        "password": "password"
+    },
+    {
+        "login": "user",
+        "password": "password"
+    },
+    {
+        "login": "user",
+        "password": "password"
+    },
+    {
+        "login": "user",
+        "password": "password"
+    },
+    {
+        "login": "user",
+        "password": "password"
+    },
+    {
+        "login": "user",
+        "password": "password"
+    },
+    {
+        "login": "user",
+        "password": "password"
+    },
+    {
+        "login": "user",
+        "password": "password"
+    },
+    {
+        "login": "user",
+        "password": "password"
+    },
+    {
+        "login": "user",
+        "password": "password"
+    },
+    {
+        "requested_path": "",
+        "full_path": "D:/\u043f\u0440\u043e\u0435\u043a\u0442 10 \u043a\u043b\u0430\u0441\u0441/\u0440\u0435\u0430\u043b\u0438\u0437\u0430\u0446\u0438\u044f/Cloud_school/example",
+        "files": [
+            {
+                "name": "200.JavaScript.Programs.for.Beginners.pdf",
+                "is_dir": false,
+                "path": "200.JavaScript.Programs.for.Beginners.pdf"
+            },
+            {
+                "name": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_1 (1).png",
+                "is_dir": false,
+                "path": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_1 (1).png"
+            },
+            {
+                "name": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_1.png",
+                "is_dir": false,
+                "path": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_1.png"
+            },
+            {
+                "name": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_2.png",
+                "is_dir": false,
+                "path": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_2.png"
+            },
+            {
+                "name": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_3 (1).png",
+                "is_dir": false,
+                "path": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_3 (1).png"
+            },
+            {
+                "name": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_3.png",
+                "is_dir": false,
+                "path": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_3.png"
+            },
+            {
+                "name": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_4.png",
+                "is_dir": false,
+                "path": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_4.png"
+            },
+            {
+                "name": "9785977520362",
+                "is_dir": true,
+                "path": "9785977520362"
+            },
+            {
+                "name": "9785977520362.zip",
+                "is_dir": false,
+                "path": "9785977520362.zip"
+            },
+            {
+                "name": "Cloud_school (1).zip",
+                "is_dir": false,
+                "path": "Cloud_school (1).zip"
+            },
+            {
+                "name": "Cloud_school (2).zip",
+                "is_dir": false,
+                "path": "Cloud_school (2).zip"
+            },
+            {
+                "name": "Cloud_school.zip",
+                "is_dir": false,
+                "path": "Cloud_school.zip"
+            },
+            {
+                "name": "Outline-Manager.exe",
+                "is_dir": false,
+                "path": "Outline-Manager.exe"
+            },
+            {
+                "name": "cloud.db",
+                "is_dir": false,
+                "path": "cloud.db"
+            },
+            {
+                "name": "config.py",
+                "is_dir": false,
+                "path": "config.py"
+            },
+            {
+                "name": "encrypt.js",
+                "is_dir": false,
+                "path": "encrypt.js"
+            },
+            {
+                "name": "git.zip",
+                "is_dir": false,
+                "path": "git.zip"
+            },
+            {
+                "name": "test",
+                "is_dir": true,
+                "path": "test"
+            },
+            {
+                "name": "tportable.4.3.3",
+                "is_dir": true,
+                "path": "tportable.4.3.3"
+            },
+            {
+                "name": "tportable.4.3.3.zip",
+                "is_dir": false,
+                "path": "tportable.4.3.3.zip"
+            },
+            {
+                "name": "\u0414\u0440\u043e\u043d\u043e\u0432_\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440_React_19_\u0420\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0430_\u0432\u0435\u0431_\u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u0439_\u043d\u0430_J\u0430vaScript (1).pdf",
+                "is_dir": false,
+                "path": "\u0414\u0440\u043e\u043d\u043e\u0432_\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440_React_19_\u0420\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0430_\u0432\u0435\u0431_\u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u0439_\u043d\u0430_J\u0430vaScript (1).pdf"
+            },
+            {
+                "name": "\u0414\u0440\u043e\u043d\u043e\u0432_\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440_React_19_\u0420\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0430_\u0432\u0435\u0431_\u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u0439_\u043d\u0430_J\u0430vaScript.pdf",
+                "is_dir": false,
+                "path": "\u0414\u0440\u043e\u043d\u043e\u0432_\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440_React_19_\u0420\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0430_\u0432\u0435\u0431_\u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u0439_\u043d\u0430_J\u0430vaScript.pdf"
+            },
+            {
+                "name": "\u041d\u043e\u0432\u0430\u044f \u043f\u0430\u043f\u043a\u0430",
+                "is_dir": true,
+                "path": "\u041d\u043e\u0432\u0430\u044f \u043f\u0430\u043f\u043a\u0430"
+            },
+            {
+                "name": "\u041f\u043e\u0434\u0433\u043e\u0442\u043e\u0432\u043a\u0430 \u043a \u044d\u043a\u0437\u0430\u043c\u0435\u043d\u0443 (\u041e\u043f\u0435\u0440\u0430\u0442\u043e\u0440 \u042d\u0412\u041c).pptx",
+                "is_dir": false,
+                "path": "\u041f\u043e\u0434\u0433\u043e\u0442\u043e\u0432\u043a\u0430 \u043a \u044d\u043a\u0437\u0430\u043c\u0435\u043d\u0443 (\u041e\u043f\u0435\u0440\u0430\u0442\u043e\u0440 \u042d\u0412\u041c).pptx"
+            },
+            {
+                "name": "\u041f\u0440\u043e\u0435\u043a\u0442 \u0418\u043d\u0436\u0435\u043d\u0435\u0440\u044b \u0431\u0443\u0434\u0443\u0449\u0435\u0433\u043e.docx",
+                "is_dir": false,
+                "path": "\u041f\u0440\u043e\u0435\u043a\u0442 \u0418\u043d\u0436\u0435\u043d\u0435\u0440\u044b \u0431\u0443\u0434\u0443\u0449\u0435\u0433\u043e.docx"
+            },
+            {
+                "name": "\u041f\u0440\u043e\u0435\u043a\u0442 \u043f\u0440\u0435\u0437\u0435\u043d\u0442\u0430\u0446\u0438\u044f.pptx",
+                "is_dir": false,
+                "path": "\u041f\u0440\u043e\u0435\u043a\u0442 \u043f\u0440\u0435\u0437\u0435\u043d\u0442\u0430\u0446\u0438\u044f.pptx"
+            },
+            {
+                "name": "\u041f\u0440\u043e\u0435\u043a\u0442.docx",
+                "is_dir": false,
+                "path": "\u041f\u0440\u043e\u0435\u043a\u0442.docx"
+            },
+            {
+                "name": "\u0430\u043d\u043e\u0442\u0430\u0446\u0438\u044f.txt",
+                "is_dir": false,
+                "path": "\u0430\u043d\u043e\u0442\u0430\u0446\u0438\u044f.txt"
+            },
+            {
+                "name": "\u0442\u0435\u0441\u0442",
+                "is_dir": true,
+                "path": "\u0442\u0435\u0441\u0442"
+            },
+            {
+                "name": "\u0442\u0435\u0441\u044211",
+                "is_dir": true,
+                "path": "\u0442\u0435\u0441\u044211"
+            },
+            {
+                "name": "\u0442\u0435\u0441\u0442\u0438\u0440\u0443\u0435\u043c",
+                "is_dir": true,
+                "path": "\u0442\u0435\u0441\u0442\u0438\u0440\u0443\u0435\u043c"
+            }
+        ]
+    },
+    {
+        "requested_path": "",
+        "full_path": "D:/\u043f\u0440\u043e\u0435\u043a\u0442 10 \u043a\u043b\u0430\u0441\u0441/\u0440\u0435\u0430\u043b\u0438\u0437\u0430\u0446\u0438\u044f/Cloud_school/example",
+        "files": [
+            {
+                "name": "200.JavaScript.Programs.for.Beginners.pdf",
+                "is_dir": false,
+                "path": "200.JavaScript.Programs.for.Beginners.pdf"
+            },
+            {
+                "name": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_1 (1).png",
+                "is_dir": false,
+                "path": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_1 (1).png"
+            },
+            {
+                "name": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_1.png",
+                "is_dir": false,
+                "path": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_1.png"
+            },
+            {
+                "name": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_2.png",
+                "is_dir": false,
+                "path": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_2.png"
+            },
+            {
+                "name": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_3 (1).png",
+                "is_dir": false,
+                "path": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_3 (1).png"
+            },
+            {
+                "name": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_3.png",
+                "is_dir": false,
+                "path": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_3.png"
+            },
+            {
+                "name": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_4.png",
+                "is_dir": false,
+                "path": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_4.png"
+            },
+            {
+                "name": "9785977520362",
+                "is_dir": true,
+                "path": "9785977520362"
+            },
+            {
+                "name": "9785977520362.zip",
+                "is_dir": false,
+                "path": "9785977520362.zip"
+            },
+            {
+                "name": "Cloud_school (1).zip",
+                "is_dir": false,
+                "path": "Cloud_school (1).zip"
+            },
+            {
+                "name": "Cloud_school (2).zip",
+                "is_dir": false,
+                "path": "Cloud_school (2).zip"
+            },
+            {
+                "name": "Cloud_school.zip",
+                "is_dir": false,
+                "path": "Cloud_school.zip"
+            },
+            {
+                "name": "Outline-Manager.exe",
+                "is_dir": false,
+                "path": "Outline-Manager.exe"
+            },
+            {
+                "name": "cloud.db",
+                "is_dir": false,
+                "path": "cloud.db"
+            },
+            {
+                "name": "config.py",
+                "is_dir": false,
+                "path": "config.py"
+            },
+            {
+                "name": "encrypt.js",
+                "is_dir": false,
+                "path": "encrypt.js"
+            },
+            {
+                "name": "git.zip",
+                "is_dir": false,
+                "path": "git.zip"
+            },
+            {
+                "name": "test",
+                "is_dir": true,
+                "path": "test"
+            },
+            {
+                "name": "tportable.4.3.3",
+                "is_dir": true,
+                "path": "tportable.4.3.3"
+            },
+            {
+                "name": "tportable.4.3.3.zip",
+                "is_dir": false,
+                "path": "tportable.4.3.3.zip"
+            },
+            {
+                "name": "\u0414\u0440\u043e\u043d\u043e\u0432_\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440_React_19_\u0420\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0430_\u0432\u0435\u0431_\u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u0439_\u043d\u0430_J\u0430vaScript (1).pdf",
+                "is_dir": false,
+                "path": "\u0414\u0440\u043e\u043d\u043e\u0432_\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440_React_19_\u0420\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0430_\u0432\u0435\u0431_\u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u0439_\u043d\u0430_J\u0430vaScript (1).pdf"
+            },
+            {
+                "name": "\u0414\u0440\u043e\u043d\u043e\u0432_\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440_React_19_\u0420\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0430_\u0432\u0435\u0431_\u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u0439_\u043d\u0430_J\u0430vaScript.pdf",
+                "is_dir": false,
+                "path": "\u0414\u0440\u043e\u043d\u043e\u0432_\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440_React_19_\u0420\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0430_\u0432\u0435\u0431_\u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u0439_\u043d\u0430_J\u0430vaScript.pdf"
+            },
+            {
+                "name": "\u041d\u043e\u0432\u0430\u044f \u043f\u0430\u043f\u043a\u0430",
+                "is_dir": true,
+                "path": "\u041d\u043e\u0432\u0430\u044f \u043f\u0430\u043f\u043a\u0430"
+            },
+            {
+                "name": "\u041f\u043e\u0434\u0433\u043e\u0442\u043e\u0432\u043a\u0430 \u043a \u044d\u043a\u0437\u0430\u043c\u0435\u043d\u0443 (\u041e\u043f\u0435\u0440\u0430\u0442\u043e\u0440 \u042d\u0412\u041c).pptx",
+                "is_dir": false,
+                "path": "\u041f\u043e\u0434\u0433\u043e\u0442\u043e\u0432\u043a\u0430 \u043a \u044d\u043a\u0437\u0430\u043c\u0435\u043d\u0443 (\u041e\u043f\u0435\u0440\u0430\u0442\u043e\u0440 \u042d\u0412\u041c).pptx"
+            },
+            {
+                "name": "\u041f\u0440\u043e\u0435\u043a\u0442 \u0418\u043d\u0436\u0435\u043d\u0435\u0440\u044b \u0431\u0443\u0434\u0443\u0449\u0435\u0433\u043e.docx",
+                "is_dir": false,
+                "path": "\u041f\u0440\u043e\u0435\u043a\u0442 \u0418\u043d\u0436\u0435\u043d\u0435\u0440\u044b \u0431\u0443\u0434\u0443\u0449\u0435\u0433\u043e.docx"
+            },
+            {
+                "name": "\u041f\u0440\u043e\u0435\u043a\u0442 \u043f\u0440\u0435\u0437\u0435\u043d\u0442\u0430\u0446\u0438\u044f.pptx",
+                "is_dir": false,
+                "path": "\u041f\u0440\u043e\u0435\u043a\u0442 \u043f\u0440\u0435\u0437\u0435\u043d\u0442\u0430\u0446\u0438\u044f.pptx"
+            },
+            {
+                "name": "\u041f\u0440\u043e\u0435\u043a\u0442.docx",
+                "is_dir": false,
+                "path": "\u041f\u0440\u043e\u0435\u043a\u0442.docx"
+            },
+            {
+                "name": "\u0430\u043d\u043e\u0442\u0430\u0446\u0438\u044f.txt",
+                "is_dir": false,
+                "path": "\u0430\u043d\u043e\u0442\u0430\u0446\u0438\u044f.txt"
+            },
+            {
+                "name": "\u0442\u0435\u0441\u0442",
+                "is_dir": true,
+                "path": "\u0442\u0435\u0441\u0442"
+            },
+            {
+                "name": "\u0442\u0435\u0441\u044211",
+                "is_dir": true,
+                "path": "\u0442\u0435\u0441\u044211"
+            },
+            {
+                "name": "\u0442\u0435\u0441\u0442\u0438\u0440\u0443\u0435\u043c",
+                "is_dir": true,
+                "path": "\u0442\u0435\u0441\u0442\u0438\u0440\u0443\u0435\u043c"
+            }
+        ]
+    },
+    {
+        "login": "sdsdfsdf",
+        "password": "wesdfsdfsdf"
+    },
+    {
+        "login": "sdsdfsdf",
+        "password": "wesdfsdfsdf"
+    },
+    {
+        "login": "p\u25635?Ys65146\u2593",
+        "password": "\\r\u041d\u2524\u042d'\u0449rH"
+    },
+    {
+        "login": "p\u25635?Ys65146\u2593",
+        "password": "\\r\u041d\u2524\u042d'\u0449rH"
+    },
+    {
+        "login": "p\u25635?Ys65146\u2593",
+        "password": "\\r\u041d\u2524\u042d'\u0449rH"
+    },
+    {
+        "login": "p\u25635?Ys65146\u2593",
+        "password": "\\r\u041d\u2524\u042d'\u0449rH"
+    },
+    {
+        "login": "p\u25635?Ys65146\u2593",
+        "password": "\\r\u041d\u2524\u042d'\u0449rH"
+    },
+    {
+        "login": "user",
+        "password": "\u0446\u0443\u0446\u0443"
+    },
+    {
+        "login": "user",
+        "password": "password"
+    },
+    {
+        "requested_path": "",
+        "full_path": "D:/\u043f\u0440\u043e\u0435\u043a\u0442 10 \u043a\u043b\u0430\u0441\u0441/\u0440\u0435\u0430\u043b\u0438\u0437\u0430\u0446\u0438\u044f/Cloud_school/example",
+        "files": [
+            {
+                "name": "200.JavaScript.Programs.for.Beginners.pdf",
+                "is_dir": false,
+                "path": "200.JavaScript.Programs.for.Beginners.pdf"
+            },
+            {
+                "name": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_1 (1).png",
+                "is_dir": false,
+                "path": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_1 (1).png"
+            },
+            {
+                "name": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_1.png",
+                "is_dir": false,
+                "path": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_1.png"
+            },
+            {
+                "name": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_2.png",
+                "is_dir": false,
+                "path": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_2.png"
+            },
+            {
+                "name": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_3 (1).png",
+                "is_dir": false,
+                "path": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_3 (1).png"
+            },
+            {
+                "name": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_3.png",
+                "is_dir": false,
+                "path": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_3.png"
+            },
+            {
+                "name": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_4.png",
+                "is_dir": false,
+                "path": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_4.png"
+            },
+            {
+                "name": "9785977520362",
+                "is_dir": true,
+                "path": "9785977520362"
+            },
+            {
+                "name": "9785977520362.zip",
+                "is_dir": false,
+                "path": "9785977520362.zip"
+            },
+            {
+                "name": "Cloud_school (1).zip",
+                "is_dir": false,
+                "path": "Cloud_school (1).zip"
+            },
+            {
+                "name": "Cloud_school (2).zip",
+                "is_dir": false,
+                "path": "Cloud_school (2).zip"
+            },
+            {
+                "name": "Cloud_school.zip",
+                "is_dir": false,
+                "path": "Cloud_school.zip"
+            },
+            {
+                "name": "Outline-Manager.exe",
+                "is_dir": false,
+                "path": "Outline-Manager.exe"
+            },
+            {
+                "name": "cloud.db",
+                "is_dir": false,
+                "path": "cloud.db"
+            },
+            {
+                "name": "config.py",
+                "is_dir": false,
+                "path": "config.py"
+            },
+            {
+                "name": "encrypt.js",
+                "is_dir": false,
+                "path": "encrypt.js"
+            },
+            {
+                "name": "git.zip",
+                "is_dir": false,
+                "path": "git.zip"
+            },
+            {
+                "name": "test",
+                "is_dir": true,
+                "path": "test"
+            },
+            {
+                "name": "tportable.4.3.3",
+                "is_dir": true,
+                "path": "tportable.4.3.3"
+            },
+            {
+                "name": "tportable.4.3.3.zip",
+                "is_dir": false,
+                "path": "tportable.4.3.3.zip"
+            },
+            {
+                "name": "\u0414\u0440\u043e\u043d\u043e\u0432_\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440_React_19_\u0420\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0430_\u0432\u0435\u0431_\u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u0439_\u043d\u0430_J\u0430vaScript (1).pdf",
+                "is_dir": false,
+                "path": "\u0414\u0440\u043e\u043d\u043e\u0432_\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440_React_19_\u0420\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0430_\u0432\u0435\u0431_\u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u0439_\u043d\u0430_J\u0430vaScript (1).pdf"
+            },
+            {
+                "name": "\u0414\u0440\u043e\u043d\u043e\u0432_\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440_React_19_\u0420\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0430_\u0432\u0435\u0431_\u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u0439_\u043d\u0430_J\u0430vaScript.pdf",
+                "is_dir": false,
+                "path": "\u0414\u0440\u043e\u043d\u043e\u0432_\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440_React_19_\u0420\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0430_\u0432\u0435\u0431_\u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u0439_\u043d\u0430_J\u0430vaScript.pdf"
+            },
+            {
+                "name": "\u041d\u043e\u0432\u0430\u044f \u043f\u0430\u043f\u043a\u0430",
+                "is_dir": true,
+                "path": "\u041d\u043e\u0432\u0430\u044f \u043f\u0430\u043f\u043a\u0430"
+            },
+            {
+                "name": "\u041f\u043e\u0434\u0433\u043e\u0442\u043e\u0432\u043a\u0430 \u043a \u044d\u043a\u0437\u0430\u043c\u0435\u043d\u0443 (\u041e\u043f\u0435\u0440\u0430\u0442\u043e\u0440 \u042d\u0412\u041c).pptx",
+                "is_dir": false,
+                "path": "\u041f\u043e\u0434\u0433\u043e\u0442\u043e\u0432\u043a\u0430 \u043a \u044d\u043a\u0437\u0430\u043c\u0435\u043d\u0443 (\u041e\u043f\u0435\u0440\u0430\u0442\u043e\u0440 \u042d\u0412\u041c).pptx"
+            },
+            {
+                "name": "\u041f\u0440\u043e\u0435\u043a\u0442 \u0418\u043d\u0436\u0435\u043d\u0435\u0440\u044b \u0431\u0443\u0434\u0443\u0449\u0435\u0433\u043e.docx",
+                "is_dir": false,
+                "path": "\u041f\u0440\u043e\u0435\u043a\u0442 \u0418\u043d\u0436\u0435\u043d\u0435\u0440\u044b \u0431\u0443\u0434\u0443\u0449\u0435\u0433\u043e.docx"
+            },
+            {
+                "name": "\u041f\u0440\u043e\u0435\u043a\u0442 \u043f\u0440\u0435\u0437\u0435\u043d\u0442\u0430\u0446\u0438\u044f.pptx",
+                "is_dir": false,
+                "path": "\u041f\u0440\u043e\u0435\u043a\u0442 \u043f\u0440\u0435\u0437\u0435\u043d\u0442\u0430\u0446\u0438\u044f.pptx"
+            },
+            {
+                "name": "\u041f\u0440\u043e\u0435\u043a\u0442.docx",
+                "is_dir": false,
+                "path": "\u041f\u0440\u043e\u0435\u043a\u0442.docx"
+            },
+            {
+                "name": "\u0430\u043d\u043e\u0442\u0430\u0446\u0438\u044f.txt",
+                "is_dir": false,
+                "path": "\u0430\u043d\u043e\u0442\u0430\u0446\u0438\u044f.txt"
+            },
+            {
+                "name": "\u0442\u0435\u0441\u0442",
+                "is_dir": true,
+                "path": "\u0442\u0435\u0441\u0442"
+            },
+            {
+                "name": "\u0442\u0435\u0441\u044211",
+                "is_dir": true,
+                "path": "\u0442\u0435\u0441\u044211"
+            },
+            {
+                "name": "\u0442\u0435\u0441\u0442\u0438\u0440\u0443\u0435\u043c",
+                "is_dir": true,
+                "path": "\u0442\u0435\u0441\u0442\u0438\u0440\u0443\u0435\u043c"
+            }
+        ]
+    },
+    {
+        "requested_path": "",
+        "full_path": "D:/\u043f\u0440\u043e\u0435\u043a\u0442 10 \u043a\u043b\u0430\u0441\u0441/\u0440\u0435\u0430\u043b\u0438\u0437\u0430\u0446\u0438\u044f/Cloud_school/example",
+        "files": [
+            {
+                "name": "200.JavaScript.Programs.for.Beginners.pdf",
+                "is_dir": false,
+                "path": "200.JavaScript.Programs.for.Beginners.pdf"
+            },
+            {
+                "name": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_1 (1).png",
+                "is_dir": false,
+                "path": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_1 (1).png"
+            },
+            {
+                "name": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_1.png",
+                "is_dir": false,
+                "path": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_1.png"
+            },
+            {
+                "name": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_2.png",
+                "is_dir": false,
+                "path": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_2.png"
+            },
+            {
+                "name": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_3 (1).png",
+                "is_dir": false,
+                "path": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_3 (1).png"
+            },
+            {
+                "name": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_3.png",
+                "is_dir": false,
+                "path": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_3.png"
+            },
+            {
+                "name": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_4.png",
+                "is_dir": false,
+                "path": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_4.png"
+            },
+            {
+                "name": "9785977520362",
+                "is_dir": true,
+                "path": "9785977520362"
+            },
+            {
+                "name": "9785977520362.zip",
+                "is_dir": false,
+                "path": "9785977520362.zip"
+            },
+            {
+                "name": "Cloud_school (1).zip",
+                "is_dir": false,
+                "path": "Cloud_school (1).zip"
+            },
+            {
+                "name": "Cloud_school (2).zip",
+                "is_dir": false,
+                "path": "Cloud_school (2).zip"
+            },
+            {
+                "name": "Cloud_school.zip",
+                "is_dir": false,
+                "path": "Cloud_school.zip"
+            },
+            {
+                "name": "Outline-Manager.exe",
+                "is_dir": false,
+                "path": "Outline-Manager.exe"
+            },
+            {
+                "name": "cloud.db",
+                "is_dir": false,
+                "path": "cloud.db"
+            },
+            {
+                "name": "config.py",
+                "is_dir": false,
+                "path": "config.py"
+            },
+            {
+                "name": "encrypt.js",
+                "is_dir": false,
+                "path": "encrypt.js"
+            },
+            {
+                "name": "git.zip",
+                "is_dir": false,
+                "path": "git.zip"
+            },
+            {
+                "name": "test",
+                "is_dir": true,
+                "path": "test"
+            },
+            {
+                "name": "tportable.4.3.3",
+                "is_dir": true,
+                "path": "tportable.4.3.3"
+            },
+            {
+                "name": "tportable.4.3.3.zip",
+                "is_dir": false,
+                "path": "tportable.4.3.3.zip"
+            },
+            {
+                "name": "\u0414\u0440\u043e\u043d\u043e\u0432_\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440_React_19_\u0420\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0430_\u0432\u0435\u0431_\u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u0439_\u043d\u0430_J\u0430vaScript (1).pdf",
+                "is_dir": false,
+                "path": "\u0414\u0440\u043e\u043d\u043e\u0432_\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440_React_19_\u0420\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0430_\u0432\u0435\u0431_\u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u0439_\u043d\u0430_J\u0430vaScript (1).pdf"
+            },
+            {
+                "name": "\u0414\u0440\u043e\u043d\u043e\u0432_\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440_React_19_\u0420\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0430_\u0432\u0435\u0431_\u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u0439_\u043d\u0430_J\u0430vaScript.pdf",
+                "is_dir": false,
+                "path": "\u0414\u0440\u043e\u043d\u043e\u0432_\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440_React_19_\u0420\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0430_\u0432\u0435\u0431_\u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u0439_\u043d\u0430_J\u0430vaScript.pdf"
+            },
+            {
+                "name": "\u041d\u043e\u0432\u0430\u044f \u043f\u0430\u043f\u043a\u0430",
+                "is_dir": true,
+                "path": "\u041d\u043e\u0432\u0430\u044f \u043f\u0430\u043f\u043a\u0430"
+            },
+            {
+                "name": "\u041f\u043e\u0434\u0433\u043e\u0442\u043e\u0432\u043a\u0430 \u043a \u044d\u043a\u0437\u0430\u043c\u0435\u043d\u0443 (\u041e\u043f\u0435\u0440\u0430\u0442\u043e\u0440 \u042d\u0412\u041c).pptx",
+                "is_dir": false,
+                "path": "\u041f\u043e\u0434\u0433\u043e\u0442\u043e\u0432\u043a\u0430 \u043a \u044d\u043a\u0437\u0430\u043c\u0435\u043d\u0443 (\u041e\u043f\u0435\u0440\u0430\u0442\u043e\u0440 \u042d\u0412\u041c).pptx"
+            },
+            {
+                "name": "\u041f\u0440\u043e\u0435\u043a\u0442 \u0418\u043d\u0436\u0435\u043d\u0435\u0440\u044b \u0431\u0443\u0434\u0443\u0449\u0435\u0433\u043e.docx",
+                "is_dir": false,
+                "path": "\u041f\u0440\u043e\u0435\u043a\u0442 \u0418\u043d\u0436\u0435\u043d\u0435\u0440\u044b \u0431\u0443\u0434\u0443\u0449\u0435\u0433\u043e.docx"
+            },
+            {
+                "name": "\u041f\u0440\u043e\u0435\u043a\u0442 \u043f\u0440\u0435\u0437\u0435\u043d\u0442\u0430\u0446\u0438\u044f.pptx",
+                "is_dir": false,
+                "path": "\u041f\u0440\u043e\u0435\u043a\u0442 \u043f\u0440\u0435\u0437\u0435\u043d\u0442\u0430\u0446\u0438\u044f.pptx"
+            },
+            {
+                "name": "\u041f\u0440\u043e\u0435\u043a\u0442.docx",
+                "is_dir": false,
+                "path": "\u041f\u0440\u043e\u0435\u043a\u0442.docx"
+            },
+            {
+                "name": "\u0430\u043d\u043e\u0442\u0430\u0446\u0438\u044f.txt",
+                "is_dir": false,
+                "path": "\u0430\u043d\u043e\u0442\u0430\u0446\u0438\u044f.txt"
+            },
+            {
+                "name": "\u0442\u0435\u0441\u0442",
+                "is_dir": true,
+                "path": "\u0442\u0435\u0441\u0442"
+            },
+            {
+                "name": "\u0442\u0435\u0441\u044211",
+                "is_dir": true,
+                "path": "\u0442\u0435\u0441\u044211"
+            },
+            {
+                "name": "\u0442\u0435\u0441\u0442\u0438\u0440\u0443\u0435\u043c",
+                "is_dir": true,
+                "path": "\u0442\u0435\u0441\u0442\u0438\u0440\u0443\u0435\u043c"
+            }
+        ]
+    },
+    {
+        "login": "user",
+        "password": "password"
+    },
+    {
+        "requested_path": "",
+        "full_path": "D:/\u043f\u0440\u043e\u0435\u043a\u0442 10 \u043a\u043b\u0430\u0441\u0441/\u0440\u0435\u0430\u043b\u0438\u0437\u0430\u0446\u0438\u044f/Cloud_school/example",
+        "files": [
+            {
+                "name": "200.JavaScript.Programs.for.Beginners.pdf",
+                "is_dir": false,
+                "path": "200.JavaScript.Programs.for.Beginners.pdf"
+            },
+            {
+                "name": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_1 (1).png",
+                "is_dir": false,
+                "path": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_1 (1).png"
+            },
+            {
+                "name": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_1.png",
+                "is_dir": false,
+                "path": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_1.png"
+            },
+            {
+                "name": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_2.png",
+                "is_dir": false,
+                "path": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_2.png"
+            },
+            {
+                "name": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_3 (1).png",
+                "is_dir": false,
+                "path": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_3 (1).png"
+            },
+            {
+                "name": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_3.png",
+                "is_dir": false,
+                "path": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_3.png"
+            },
+            {
+                "name": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_4.png",
+                "is_dir": false,
+                "path": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_4.png"
+            },
+            {
+                "name": "9785977520362",
+                "is_dir": true,
+                "path": "9785977520362"
+            },
+            {
+                "name": "9785977520362.zip",
+                "is_dir": false,
+                "path": "9785977520362.zip"
+            },
+            {
+                "name": "Cloud_school (1).zip",
+                "is_dir": false,
+                "path": "Cloud_school (1).zip"
+            },
+            {
+                "name": "Cloud_school (2).zip",
+                "is_dir": false,
+                "path": "Cloud_school (2).zip"
+            },
+            {
+                "name": "Cloud_school.zip",
+                "is_dir": false,
+                "path": "Cloud_school.zip"
+            },
+            {
+                "name": "Outline-Manager.exe",
+                "is_dir": false,
+                "path": "Outline-Manager.exe"
+            },
+            {
+                "name": "cloud.db",
+                "is_dir": false,
+                "path": "cloud.db"
+            },
+            {
+                "name": "config.py",
+                "is_dir": false,
+                "path": "config.py"
+            },
+            {
+                "name": "encrypt.js",
+                "is_dir": false,
+                "path": "encrypt.js"
+            },
+            {
+                "name": "git.zip",
+                "is_dir": false,
+                "path": "git.zip"
+            },
+            {
+                "name": "test",
+                "is_dir": true,
+                "path": "test"
+            },
+            {
+                "name": "tportable.4.3.3",
+                "is_dir": true,
+                "path": "tportable.4.3.3"
+            },
+            {
+                "name": "tportable.4.3.3.zip",
+                "is_dir": false,
+                "path": "tportable.4.3.3.zip"
+            },
+            {
+                "name": "\u0414\u0440\u043e\u043d\u043e\u0432_\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440_React_19_\u0420\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0430_\u0432\u0435\u0431_\u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u0439_\u043d\u0430_J\u0430vaScript (1).pdf",
+                "is_dir": false,
+                "path": "\u0414\u0440\u043e\u043d\u043e\u0432_\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440_React_19_\u0420\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0430_\u0432\u0435\u0431_\u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u0439_\u043d\u0430_J\u0430vaScript (1).pdf"
+            },
+            {
+                "name": "\u0414\u0440\u043e\u043d\u043e\u0432_\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440_React_19_\u0420\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0430_\u0432\u0435\u0431_\u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u0439_\u043d\u0430_J\u0430vaScript.pdf",
+                "is_dir": false,
+                "path": "\u0414\u0440\u043e\u043d\u043e\u0432_\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440_React_19_\u0420\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0430_\u0432\u0435\u0431_\u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u0439_\u043d\u0430_J\u0430vaScript.pdf"
+            },
+            {
+                "name": "\u041d\u043e\u0432\u0430\u044f \u043f\u0430\u043f\u043a\u0430",
+                "is_dir": true,
+                "path": "\u041d\u043e\u0432\u0430\u044f \u043f\u0430\u043f\u043a\u0430"
+            },
+            {
+                "name": "\u041f\u043e\u0434\u0433\u043e\u0442\u043e\u0432\u043a\u0430 \u043a \u044d\u043a\u0437\u0430\u043c\u0435\u043d\u0443 (\u041e\u043f\u0435\u0440\u0430\u0442\u043e\u0440 \u042d\u0412\u041c).pptx",
+                "is_dir": false,
+                "path": "\u041f\u043e\u0434\u0433\u043e\u0442\u043e\u0432\u043a\u0430 \u043a \u044d\u043a\u0437\u0430\u043c\u0435\u043d\u0443 (\u041e\u043f\u0435\u0440\u0430\u0442\u043e\u0440 \u042d\u0412\u041c).pptx"
+            },
+            {
+                "name": "\u041f\u0440\u043e\u0435\u043a\u0442 \u0418\u043d\u0436\u0435\u043d\u0435\u0440\u044b \u0431\u0443\u0434\u0443\u0449\u0435\u0433\u043e.docx",
+                "is_dir": false,
+                "path": "\u041f\u0440\u043e\u0435\u043a\u0442 \u0418\u043d\u0436\u0435\u043d\u0435\u0440\u044b \u0431\u0443\u0434\u0443\u0449\u0435\u0433\u043e.docx"
+            },
+            {
+                "name": "\u041f\u0440\u043e\u0435\u043a\u0442 \u043f\u0440\u0435\u0437\u0435\u043d\u0442\u0430\u0446\u0438\u044f.pptx",
+                "is_dir": false,
+                "path": "\u041f\u0440\u043e\u0435\u043a\u0442 \u043f\u0440\u0435\u0437\u0435\u043d\u0442\u0430\u0446\u0438\u044f.pptx"
+            },
+            {
+                "name": "\u041f\u0440\u043e\u0435\u043a\u0442.docx",
+                "is_dir": false,
+                "path": "\u041f\u0440\u043e\u0435\u043a\u0442.docx"
+            },
+            {
+                "name": "\u0430\u043d\u043e\u0442\u0430\u0446\u0438\u044f.txt",
+                "is_dir": false,
+                "path": "\u0430\u043d\u043e\u0442\u0430\u0446\u0438\u044f.txt"
+            },
+            {
+                "name": "\u0442\u0435\u0441\u0442",
+                "is_dir": true,
+                "path": "\u0442\u0435\u0441\u0442"
+            },
+            {
+                "name": "\u0442\u0435\u0441\u044211",
+                "is_dir": true,
+                "path": "\u0442\u0435\u0441\u044211"
+            },
+            {
+                "name": "\u0442\u0435\u0441\u0442\u0438\u0440\u0443\u0435\u043c",
+                "is_dir": true,
+                "path": "\u0442\u0435\u0441\u0442\u0438\u0440\u0443\u0435\u043c"
+            }
+        ]
+    },
+    {
+        "requested_path": "",
+        "full_path": "D:/\u043f\u0440\u043e\u0435\u043a\u0442 10 \u043a\u043b\u0430\u0441\u0441/\u0440\u0435\u0430\u043b\u0438\u0437\u0430\u0446\u0438\u044f/Cloud_school/example",
+        "files": [
+            {
+                "name": "200.JavaScript.Programs.for.Beginners.pdf",
+                "is_dir": false,
+                "path": "200.JavaScript.Programs.for.Beginners.pdf"
+            },
+            {
+                "name": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_1 (1).png",
+                "is_dir": false,
+                "path": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_1 (1).png"
+            },
+            {
+                "name": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_1.png",
+                "is_dir": false,
+                "path": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_1.png"
+            },
+            {
+                "name": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_2.png",
+                "is_dir": false,
+                "path": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_2.png"
+            },
+            {
+                "name": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_3 (1).png",
+                "is_dir": false,
+                "path": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_3 (1).png"
+            },
+            {
+                "name": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_3.png",
+                "is_dir": false,
+                "path": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_3.png"
+            },
+            {
+                "name": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_4.png",
+                "is_dir": false,
+                "path": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_4.png"
+            },
+            {
+                "name": "9785977520362",
+                "is_dir": true,
+                "path": "9785977520362"
+            },
+            {
+                "name": "9785977520362.zip",
+                "is_dir": false,
+                "path": "9785977520362.zip"
+            },
+            {
+                "name": "Cloud_school (1).zip",
+                "is_dir": false,
+                "path": "Cloud_school (1).zip"
+            },
+            {
+                "name": "Cloud_school (2).zip",
+                "is_dir": false,
+                "path": "Cloud_school (2).zip"
+            },
+            {
+                "name": "Cloud_school.zip",
+                "is_dir": false,
+                "path": "Cloud_school.zip"
+            },
+            {
+                "name": "Outline-Manager.exe",
+                "is_dir": false,
+                "path": "Outline-Manager.exe"
+            },
+            {
+                "name": "cloud.db",
+                "is_dir": false,
+                "path": "cloud.db"
+            },
+            {
+                "name": "config.py",
+                "is_dir": false,
+                "path": "config.py"
+            },
+            {
+                "name": "encrypt.js",
+                "is_dir": false,
+                "path": "encrypt.js"
+            },
+            {
+                "name": "git.zip",
+                "is_dir": false,
+                "path": "git.zip"
+            },
+            {
+                "name": "test",
+                "is_dir": true,
+                "path": "test"
+            },
+            {
+                "name": "tportable.4.3.3",
+                "is_dir": true,
+                "path": "tportable.4.3.3"
+            },
+            {
+                "name": "tportable.4.3.3.zip",
+                "is_dir": false,
+                "path": "tportable.4.3.3.zip"
+            },
+            {
+                "name": "\u0414\u0440\u043e\u043d\u043e\u0432_\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440_React_19_\u0420\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0430_\u0432\u0435\u0431_\u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u0439_\u043d\u0430_J\u0430vaScript (1).pdf",
+                "is_dir": false,
+                "path": "\u0414\u0440\u043e\u043d\u043e\u0432_\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440_React_19_\u0420\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0430_\u0432\u0435\u0431_\u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u0439_\u043d\u0430_J\u0430vaScript (1).pdf"
+            },
+            {
+                "name": "\u0414\u0440\u043e\u043d\u043e\u0432_\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440_React_19_\u0420\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0430_\u0432\u0435\u0431_\u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u0439_\u043d\u0430_J\u0430vaScript.pdf",
+                "is_dir": false,
+                "path": "\u0414\u0440\u043e\u043d\u043e\u0432_\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440_React_19_\u0420\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0430_\u0432\u0435\u0431_\u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u0439_\u043d\u0430_J\u0430vaScript.pdf"
+            },
+            {
+                "name": "\u041d\u043e\u0432\u0430\u044f \u043f\u0430\u043f\u043a\u0430",
+                "is_dir": true,
+                "path": "\u041d\u043e\u0432\u0430\u044f \u043f\u0430\u043f\u043a\u0430"
+            },
+            {
+                "name": "\u041f\u043e\u0434\u0433\u043e\u0442\u043e\u0432\u043a\u0430 \u043a \u044d\u043a\u0437\u0430\u043c\u0435\u043d\u0443 (\u041e\u043f\u0435\u0440\u0430\u0442\u043e\u0440 \u042d\u0412\u041c).pptx",
+                "is_dir": false,
+                "path": "\u041f\u043e\u0434\u0433\u043e\u0442\u043e\u0432\u043a\u0430 \u043a \u044d\u043a\u0437\u0430\u043c\u0435\u043d\u0443 (\u041e\u043f\u0435\u0440\u0430\u0442\u043e\u0440 \u042d\u0412\u041c).pptx"
+            },
+            {
+                "name": "\u041f\u0440\u043e\u0435\u043a\u0442 \u0418\u043d\u0436\u0435\u043d\u0435\u0440\u044b \u0431\u0443\u0434\u0443\u0449\u0435\u0433\u043e.docx",
+                "is_dir": false,
+                "path": "\u041f\u0440\u043e\u0435\u043a\u0442 \u0418\u043d\u0436\u0435\u043d\u0435\u0440\u044b \u0431\u0443\u0434\u0443\u0449\u0435\u0433\u043e.docx"
+            },
+            {
+                "name": "\u041f\u0440\u043e\u0435\u043a\u0442 \u043f\u0440\u0435\u0437\u0435\u043d\u0442\u0430\u0446\u0438\u044f.pptx",
+                "is_dir": false,
+                "path": "\u041f\u0440\u043e\u0435\u043a\u0442 \u043f\u0440\u0435\u0437\u0435\u043d\u0442\u0430\u0446\u0438\u044f.pptx"
+            },
+            {
+                "name": "\u041f\u0440\u043e\u0435\u043a\u0442.docx",
+                "is_dir": false,
+                "path": "\u041f\u0440\u043e\u0435\u043a\u0442.docx"
+            },
+            {
+                "name": "\u0430\u043d\u043e\u0442\u0430\u0446\u0438\u044f.txt",
+                "is_dir": false,
+                "path": "\u0430\u043d\u043e\u0442\u0430\u0446\u0438\u044f.txt"
+            },
+            {
+                "name": "\u0442\u0435\u0441\u0442",
+                "is_dir": true,
+                "path": "\u0442\u0435\u0441\u0442"
+            },
+            {
+                "name": "\u0442\u0435\u0441\u044211",
+                "is_dir": true,
+                "path": "\u0442\u0435\u0441\u044211"
+            },
+            {
+                "name": "\u0442\u0435\u0441\u0442\u0438\u0440\u0443\u0435\u043c",
+                "is_dir": true,
+                "path": "\u0442\u0435\u0441\u0442\u0438\u0440\u0443\u0435\u043c"
+            }
+        ]
+    },
+    {
+        "requested_path": "\u041d\u043e\u0432\u0430\u044f \u043f\u0430\u043f\u043a\u0430",
+        "full_path": "D:/\u043f\u0440\u043e\u0435\u043a\u0442 10 \u043a\u043b\u0430\u0441\u0441/\u0440\u0435\u0430\u043b\u0438\u0437\u0430\u0446\u0438\u044f/Cloud_school/example\\\u041d\u043e\u0432\u0430\u044f \u043f\u0430\u043f\u043a\u0430",
+        "files": [
+            {
+                "name": "200.JavaScript.Programs.for.Beginners.pdf",
+                "is_dir": false,
+                "path": "\u041d\u043e\u0432\u0430\u044f \u043f\u0430\u043f\u043a\u0430/200.JavaScript.Programs.for.Beginners.pdf"
+            },
+            {
+                "name": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_1 (1).png",
+                "is_dir": false,
+                "path": "\u041d\u043e\u0432\u0430\u044f \u043f\u0430\u043f\u043a\u0430/44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_1 (1).png"
+            },
+            {
+                "name": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_1.png",
+                "is_dir": false,
+                "path": "\u041d\u043e\u0432\u0430\u044f \u043f\u0430\u043f\u043a\u0430/44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_1.png"
+            },
+            {
+                "name": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_2.png",
+                "is_dir": false,
+                "path": "\u041d\u043e\u0432\u0430\u044f \u043f\u0430\u043f\u043a\u0430/44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_2.png"
+            },
+            {
+                "name": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_3 (1).png",
+                "is_dir": false,
+                "path": "\u041d\u043e\u0432\u0430\u044f \u043f\u0430\u043f\u043a\u0430/44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_3 (1).png"
+            },
+            {
+                "name": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_3.png",
+                "is_dir": false,
+                "path": "\u041d\u043e\u0432\u0430\u044f \u043f\u0430\u043f\u043a\u0430/44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_3.png"
+            },
+            {
+                "name": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_4.png",
+                "is_dir": false,
+                "path": "\u041d\u043e\u0432\u0430\u044f \u043f\u0430\u043f\u043a\u0430/44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_4.png"
+            },
+            {
+                "name": "9785977520362",
+                "is_dir": true,
+                "path": "\u041d\u043e\u0432\u0430\u044f \u043f\u0430\u043f\u043a\u0430/9785977520362"
+            },
+            {
+                "name": "9785977520362.zip",
+                "is_dir": false,
+                "path": "\u041d\u043e\u0432\u0430\u044f \u043f\u0430\u043f\u043a\u0430/9785977520362.zip"
+            },
+            {
+                "name": "Cloud_school (1).zip",
+                "is_dir": false,
+                "path": "\u041d\u043e\u0432\u0430\u044f \u043f\u0430\u043f\u043a\u0430/Cloud_school (1).zip"
+            },
+            {
+                "name": "Cloud_school (2).zip",
+                "is_dir": false,
+                "path": "\u041d\u043e\u0432\u0430\u044f \u043f\u0430\u043f\u043a\u0430/Cloud_school (2).zip"
+            },
+            {
+                "name": "Cloud_school.zip",
+                "is_dir": false,
+                "path": "\u041d\u043e\u0432\u0430\u044f \u043f\u0430\u043f\u043a\u0430/Cloud_school.zip"
+            },
+            {
+                "name": "Outline-Manager.exe",
+                "is_dir": false,
+                "path": "\u041d\u043e\u0432\u0430\u044f \u043f\u0430\u043f\u043a\u0430/Outline-Manager.exe"
+            },
+            {
+                "name": "Telegram.exe",
+                "is_dir": false,
+                "path": "\u041d\u043e\u0432\u0430\u044f \u043f\u0430\u043f\u043a\u0430/Telegram.exe"
+            },
+            {
+                "name": "Updater.exe",
+                "is_dir": false,
+                "path": "\u041d\u043e\u0432\u0430\u044f \u043f\u0430\u043f\u043a\u0430/Updater.exe"
+            },
+            {
+                "name": "big-sur-mountains-6016x6016-1476.jpg",
+                "is_dir": false,
+                "path": "\u041d\u043e\u0432\u0430\u044f \u043f\u0430\u043f\u043a\u0430/big-sur-mountains-6016x6016-1476.jpg"
+            },
+            {
+                "name": "big-sur-mountains-night-6016x6016-1493.jpg",
+                "is_dir": false,
+                "path": "\u041d\u043e\u0432\u0430\u044f \u043f\u0430\u043f\u043a\u0430/big-sur-mountains-night-6016x6016-1493.jpg"
+            },
+            {
+                "name": "cloud.db",
+                "is_dir": false,
+                "path": "\u041d\u043e\u0432\u0430\u044f \u043f\u0430\u043f\u043a\u0430/cloud.db"
+            },
+            {
+                "name": "config.py",
+                "is_dir": false,
+                "path": "\u041d\u043e\u0432\u0430\u044f \u043f\u0430\u043f\u043a\u0430/config.py"
+            },
+            {
+                "name": "encrypt.js",
+                "is_dir": false,
+                "path": "\u041d\u043e\u0432\u0430\u044f \u043f\u0430\u043f\u043a\u0430/encrypt.js"
+            },
+            {
+                "name": "git.zip",
+                "is_dir": false,
+                "path": "\u041d\u043e\u0432\u0430\u044f \u043f\u0430\u043f\u043a\u0430/git.zip"
+            },
+            {
+                "name": "log.txt",
+                "is_dir": false,
+                "path": "\u041d\u043e\u0432\u0430\u044f \u043f\u0430\u043f\u043a\u0430/log.txt"
+            },
+            {
+                "name": "macos-catalina-mountains--5k-6016x6016.jpg",
+                "is_dir": false,
+                "path": "\u041d\u043e\u0432\u0430\u044f \u043f\u0430\u043f\u043a\u0430/macos-catalina-mountains--5k-6016x6016.jpg"
+            },
+            {
+                "name": "modules",
+                "is_dir": true,
+                "path": "\u041d\u043e\u0432\u0430\u044f \u043f\u0430\u043f\u043a\u0430/modules"
+            },
+            {
+                "name": "road-mountains-5k-6016x6016.jpg",
+                "is_dir": false,
+                "path": "\u041d\u043e\u0432\u0430\u044f \u043f\u0430\u043f\u043a\u0430/road-mountains-5k-6016x6016.jpg"
+            },
+            {
+                "name": "tdata",
+                "is_dir": true,
+                "path": "\u041d\u043e\u0432\u0430\u044f \u043f\u0430\u043f\u043a\u0430/tdata"
+            },
+            {
+                "name": "test",
+                "is_dir": true,
+                "path": "\u041d\u043e\u0432\u0430\u044f \u043f\u0430\u043f\u043a\u0430/test"
+            },
+            {
+                "name": "tportable.4.3.3",
+                "is_dir": true,
+                "path": "\u041d\u043e\u0432\u0430\u044f \u043f\u0430\u043f\u043a\u0430/tportable.4.3.3"
+            },
+            {
+                "name": "tportable.4.3.3.zip",
+                "is_dir": false,
+                "path": "\u041d\u043e\u0432\u0430\u044f \u043f\u0430\u043f\u043a\u0430/tportable.4.3.3.zip"
+            },
+            {
+                "name": "tupdates",
+                "is_dir": true,
+                "path": "\u041d\u043e\u0432\u0430\u044f \u043f\u0430\u043f\u043a\u0430/tupdates"
+            },
+            {
+                "name": "\u0414\u0440\u043e\u043d\u043e\u0432_\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440_React_19_\u0420\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0430_\u0432\u0435\u0431_\u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u0439_\u043d\u0430_J\u0430vaScript (1).pdf",
+                "is_dir": false,
+                "path": "\u041d\u043e\u0432\u0430\u044f \u043f\u0430\u043f\u043a\u0430/\u0414\u0440\u043e\u043d\u043e\u0432_\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440_React_19_\u0420\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0430_\u0432\u0435\u0431_\u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u0439_\u043d\u0430_J\u0430vaScript (1).pdf"
+            },
+            {
+                "name": "\u0414\u0440\u043e\u043d\u043e\u0432_\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440_React_19_\u0420\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0430_\u0432\u0435\u0431_\u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u0439_\u043d\u0430_J\u0430vaScript.pdf",
+                "is_dir": false,
+                "path": "\u041d\u043e\u0432\u0430\u044f \u043f\u0430\u043f\u043a\u0430/\u0414\u0440\u043e\u043d\u043e\u0432_\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440_React_19_\u0420\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0430_\u0432\u0435\u0431_\u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u0439_\u043d\u0430_J\u0430vaScript.pdf"
+            },
+            {
+                "name": "\u041f\u043e\u0434\u0433\u043e\u0442\u043e\u0432\u043a\u0430 \u043a \u044d\u043a\u0437\u0430\u043c\u0435\u043d\u0443 (\u041e\u043f\u0435\u0440\u0430\u0442\u043e\u0440 \u042d\u0412\u041c).pptx",
+                "is_dir": false,
+                "path": "\u041d\u043e\u0432\u0430\u044f \u043f\u0430\u043f\u043a\u0430/\u041f\u043e\u0434\u0433\u043e\u0442\u043e\u0432\u043a\u0430 \u043a \u044d\u043a\u0437\u0430\u043c\u0435\u043d\u0443 (\u041e\u043f\u0435\u0440\u0430\u0442\u043e\u0440 \u042d\u0412\u041c).pptx"
+            },
+            {
+                "name": "\u041f\u0440\u043e\u0435\u043a\u0442 \u0418\u043d\u0436\u0435\u043d\u0435\u0440\u044b \u0431\u0443\u0434\u0443\u0449\u0435\u0433\u043e.docx",
+                "is_dir": false,
+                "path": "\u041d\u043e\u0432\u0430\u044f \u043f\u0430\u043f\u043a\u0430/\u041f\u0440\u043e\u0435\u043a\u0442 \u0418\u043d\u0436\u0435\u043d\u0435\u0440\u044b \u0431\u0443\u0434\u0443\u0449\u0435\u0433\u043e.docx"
+            },
+            {
+                "name": "\u041f\u0440\u043e\u0435\u043a\u0442 \u043f\u0440\u0435\u0437\u0435\u043d\u0442\u0430\u0446\u0438\u044f.pptx",
+                "is_dir": false,
+                "path": "\u041d\u043e\u0432\u0430\u044f \u043f\u0430\u043f\u043a\u0430/\u041f\u0440\u043e\u0435\u043a\u0442 \u043f\u0440\u0435\u0437\u0435\u043d\u0442\u0430\u0446\u0438\u044f.pptx"
+            },
+            {
+                "name": "\u041f\u0440\u043e\u0435\u043a\u0442.docx",
+                "is_dir": false,
+                "path": "\u041d\u043e\u0432\u0430\u044f \u043f\u0430\u043f\u043a\u0430/\u041f\u0440\u043e\u0435\u043a\u0442.docx"
+            },
+            {
+                "name": "\u0430\u043d\u043e\u0442\u0430\u0446\u0438\u044f.txt",
+                "is_dir": false,
+                "path": "\u041d\u043e\u0432\u0430\u044f \u043f\u0430\u043f\u043a\u0430/\u0430\u043d\u043e\u0442\u0430\u0446\u0438\u044f.txt"
+            },
+            {
+                "name": "\u043d\u043e\u0432\u043e\u0435",
+                "is_dir": true,
+                "path": "\u041d\u043e\u0432\u0430\u044f \u043f\u0430\u043f\u043a\u0430/\u043d\u043e\u0432\u043e\u0435"
+            },
+            {
+                "name": "\u0442\u0435\u0441\u0442\u0438\u0440\u0443\u0435\u043c",
+                "is_dir": true,
+                "path": "\u041d\u043e\u0432\u0430\u044f \u043f\u0430\u043f\u043a\u0430/\u0442\u0435\u0441\u0442\u0438\u0440\u0443\u0435\u043c"
+            }
+        ]
+    },
+    {
+        "login": "user",
+        "password": "password"
+    },
+    {
+        "requested_path": "",
+        "full_path": "D:/\u043f\u0440\u043e\u0435\u043a\u0442 10 \u043a\u043b\u0430\u0441\u0441/\u0440\u0435\u0430\u043b\u0438\u0437\u0430\u0446\u0438\u044f/Cloud_school/example",
+        "files": [
+            {
+                "name": "200.JavaScript.Programs.for.Beginners.pdf",
+                "is_dir": false,
+                "path": "200.JavaScript.Programs.for.Beginners.pdf"
+            },
+            {
+                "name": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_1 (1).png",
+                "is_dir": false,
+                "path": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_1 (1).png"
+            },
+            {
+                "name": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_1.png",
+                "is_dir": false,
+                "path": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_1.png"
+            },
+            {
+                "name": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_2.png",
+                "is_dir": false,
+                "path": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_2.png"
+            },
+            {
+                "name": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_3 (1).png",
+                "is_dir": false,
+                "path": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_3 (1).png"
+            },
+            {
+                "name": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_3.png",
+                "is_dir": false,
+                "path": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_3.png"
+            },
+            {
+                "name": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_4.png",
+                "is_dir": false,
+                "path": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_4.png"
+            },
+            {
+                "name": "9785977520362.zip",
+                "is_dir": false,
+                "path": "9785977520362.zip"
+            },
+            {
+                "name": "Cloud_school (1).zip",
+                "is_dir": false,
+                "path": "Cloud_school (1).zip"
+            },
+            {
+                "name": "Cloud_school (2).zip",
+                "is_dir": false,
+                "path": "Cloud_school (2).zip"
+            },
+            {
+                "name": "Cloud_school.zip",
+                "is_dir": false,
+                "path": "Cloud_school.zip"
+            },
+            {
+                "name": "Outline-Manager.exe",
+                "is_dir": false,
+                "path": "Outline-Manager.exe"
+            },
+            {
+                "name": "cloud.db",
+                "is_dir": false,
+                "path": "cloud.db"
+            },
+            {
+                "name": "config.py",
+                "is_dir": false,
+                "path": "config.py"
+            },
+            {
+                "name": "encrypt.js",
+                "is_dir": false,
+                "path": "encrypt.js"
+            },
+            {
+                "name": "git.zip",
+                "is_dir": false,
+                "path": "git.zip"
+            },
+            {
+                "name": "tportable.4.3.3.zip",
+                "is_dir": false,
+                "path": "tportable.4.3.3.zip"
+            },
+            {
+                "name": "\u0414\u0440\u043e\u043d\u043e\u0432_\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440_React_19_\u0420\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0430_\u0432\u0435\u0431_\u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u0439_\u043d\u0430_J\u0430vaScript (1).pdf",
+                "is_dir": false,
+                "path": "\u0414\u0440\u043e\u043d\u043e\u0432_\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440_React_19_\u0420\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0430_\u0432\u0435\u0431_\u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u0439_\u043d\u0430_J\u0430vaScript (1).pdf"
+            },
+            {
+                "name": "\u0414\u0440\u043e\u043d\u043e\u0432_\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440_React_19_\u0420\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0430_\u0432\u0435\u0431_\u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u0439_\u043d\u0430_J\u0430vaScript.pdf",
+                "is_dir": false,
+                "path": "\u0414\u0440\u043e\u043d\u043e\u0432_\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440_React_19_\u0420\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0430_\u0432\u0435\u0431_\u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u0439_\u043d\u0430_J\u0430vaScript.pdf"
+            },
+            {
+                "name": "\u041d\u043e\u0432\u0430\u044f \u043f\u0430\u043f\u043a\u0430",
+                "is_dir": true,
+                "path": "\u041d\u043e\u0432\u0430\u044f \u043f\u0430\u043f\u043a\u0430"
+            },
+            {
+                "name": "\u041f\u043e\u0434\u0433\u043e\u0442\u043e\u0432\u043a\u0430 \u043a \u044d\u043a\u0437\u0430\u043c\u0435\u043d\u0443 (\u041e\u043f\u0435\u0440\u0430\u0442\u043e\u0440 \u042d\u0412\u041c).pptx",
+                "is_dir": false,
+                "path": "\u041f\u043e\u0434\u0433\u043e\u0442\u043e\u0432\u043a\u0430 \u043a \u044d\u043a\u0437\u0430\u043c\u0435\u043d\u0443 (\u041e\u043f\u0435\u0440\u0430\u0442\u043e\u0440 \u042d\u0412\u041c).pptx"
+            },
+            {
+                "name": "\u041f\u0440\u043e\u0435\u043a\u0442 \u0418\u043d\u0436\u0435\u043d\u0435\u0440\u044b \u0431\u0443\u0434\u0443\u0449\u0435\u0433\u043e.docx",
+                "is_dir": false,
+                "path": "\u041f\u0440\u043e\u0435\u043a\u0442 \u0418\u043d\u0436\u0435\u043d\u0435\u0440\u044b \u0431\u0443\u0434\u0443\u0449\u0435\u0433\u043e.docx"
+            },
+            {
+                "name": "\u041f\u0440\u043e\u0435\u043a\u0442 \u043f\u0440\u0435\u0437\u0435\u043d\u0442\u0430\u0446\u0438\u044f.pptx",
+                "is_dir": false,
+                "path": "\u041f\u0440\u043e\u0435\u043a\u0442 \u043f\u0440\u0435\u0437\u0435\u043d\u0442\u0430\u0446\u0438\u044f.pptx"
+            },
+            {
+                "name": "\u041f\u0440\u043e\u0435\u043a\u0442.docx",
+                "is_dir": false,
+                "path": "\u041f\u0440\u043e\u0435\u043a\u0442.docx"
+            },
+            {
+                "name": "\u0430\u043d\u043e\u0442\u0430\u0446\u0438\u044f.txt",
+                "is_dir": false,
+                "path": "\u0430\u043d\u043e\u0442\u0430\u0446\u0438\u044f.txt"
+            },
+            {
+                "name": "\u0442\u0435\u0441\u0442",
+                "is_dir": true,
+                "path": "\u0442\u0435\u0441\u0442"
+            },
+            {
+                "name": "\u0442\u0435\u0441\u044211",
+                "is_dir": true,
+                "path": "\u0442\u0435\u0441\u044211"
+            }
+        ]
+    },
+    {
+        "requested_path": "",
+        "full_path": "D:/\u043f\u0440\u043e\u0435\u043a\u0442 10 \u043a\u043b\u0430\u0441\u0441/\u0440\u0435\u0430\u043b\u0438\u0437\u0430\u0446\u0438\u044f/Cloud_school/example",
+        "files": [
+            {
+                "name": "200.JavaScript.Programs.for.Beginners.pdf",
+                "is_dir": false,
+                "path": "200.JavaScript.Programs.for.Beginners.pdf"
+            },
+            {
+                "name": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_1 (1).png",
+                "is_dir": false,
+                "path": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_1 (1).png"
+            },
+            {
+                "name": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_1.png",
+                "is_dir": false,
+                "path": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_1.png"
+            },
+            {
+                "name": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_2.png",
+                "is_dir": false,
+                "path": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_2.png"
+            },
+            {
+                "name": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_3 (1).png",
+                "is_dir": false,
+                "path": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_3 (1).png"
+            },
+            {
+                "name": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_3.png",
+                "is_dir": false,
+                "path": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_3.png"
+            },
+            {
+                "name": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_4.png",
+                "is_dir": false,
+                "path": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_4.png"
+            },
+            {
+                "name": "9785977520362.zip",
+                "is_dir": false,
+                "path": "9785977520362.zip"
+            },
+            {
+                "name": "Cloud_school (1).zip",
+                "is_dir": false,
+                "path": "Cloud_school (1).zip"
+            },
+            {
+                "name": "Cloud_school (2).zip",
+                "is_dir": false,
+                "path": "Cloud_school (2).zip"
+            },
+            {
+                "name": "Cloud_school.zip",
+                "is_dir": false,
+                "path": "Cloud_school.zip"
+            },
+            {
+                "name": "Outline-Manager.exe",
+                "is_dir": false,
+                "path": "Outline-Manager.exe"
+            },
+            {
+                "name": "cloud.db",
+                "is_dir": false,
+                "path": "cloud.db"
+            },
+            {
+                "name": "config.py",
+                "is_dir": false,
+                "path": "config.py"
+            },
+            {
+                "name": "encrypt.js",
+                "is_dir": false,
+                "path": "encrypt.js"
+            },
+            {
+                "name": "git.zip",
+                "is_dir": false,
+                "path": "git.zip"
+            },
+            {
+                "name": "tportable.4.3.3.zip",
+                "is_dir": false,
+                "path": "tportable.4.3.3.zip"
+            },
+            {
+                "name": "\u0414\u0440\u043e\u043d\u043e\u0432_\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440_React_19_\u0420\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0430_\u0432\u0435\u0431_\u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u0439_\u043d\u0430_J\u0430vaScript (1).pdf",
+                "is_dir": false,
+                "path": "\u0414\u0440\u043e\u043d\u043e\u0432_\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440_React_19_\u0420\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0430_\u0432\u0435\u0431_\u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u0439_\u043d\u0430_J\u0430vaScript (1).pdf"
+            },
+            {
+                "name": "\u0414\u0440\u043e\u043d\u043e\u0432_\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440_React_19_\u0420\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0430_\u0432\u0435\u0431_\u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u0439_\u043d\u0430_J\u0430vaScript.pdf",
+                "is_dir": false,
+                "path": "\u0414\u0440\u043e\u043d\u043e\u0432_\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440_React_19_\u0420\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0430_\u0432\u0435\u0431_\u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u0439_\u043d\u0430_J\u0430vaScript.pdf"
+            },
+            {
+                "name": "\u041d\u043e\u0432\u0430\u044f \u043f\u0430\u043f\u043a\u0430",
+                "is_dir": true,
+                "path": "\u041d\u043e\u0432\u0430\u044f \u043f\u0430\u043f\u043a\u0430"
+            },
+            {
+                "name": "\u041f\u043e\u0434\u0433\u043e\u0442\u043e\u0432\u043a\u0430 \u043a \u044d\u043a\u0437\u0430\u043c\u0435\u043d\u0443 (\u041e\u043f\u0435\u0440\u0430\u0442\u043e\u0440 \u042d\u0412\u041c).pptx",
+                "is_dir": false,
+                "path": "\u041f\u043e\u0434\u0433\u043e\u0442\u043e\u0432\u043a\u0430 \u043a \u044d\u043a\u0437\u0430\u043c\u0435\u043d\u0443 (\u041e\u043f\u0435\u0440\u0430\u0442\u043e\u0440 \u042d\u0412\u041c).pptx"
+            },
+            {
+                "name": "\u041f\u0440\u043e\u0435\u043a\u0442 \u0418\u043d\u0436\u0435\u043d\u0435\u0440\u044b \u0431\u0443\u0434\u0443\u0449\u0435\u0433\u043e.docx",
+                "is_dir": false,
+                "path": "\u041f\u0440\u043e\u0435\u043a\u0442 \u0418\u043d\u0436\u0435\u043d\u0435\u0440\u044b \u0431\u0443\u0434\u0443\u0449\u0435\u0433\u043e.docx"
+            },
+            {
+                "name": "\u041f\u0440\u043e\u0435\u043a\u0442 \u043f\u0440\u0435\u0437\u0435\u043d\u0442\u0430\u0446\u0438\u044f.pptx",
+                "is_dir": false,
+                "path": "\u041f\u0440\u043e\u0435\u043a\u0442 \u043f\u0440\u0435\u0437\u0435\u043d\u0442\u0430\u0446\u0438\u044f.pptx"
+            },
+            {
+                "name": "\u041f\u0440\u043e\u0435\u043a\u0442.docx",
+                "is_dir": false,
+                "path": "\u041f\u0440\u043e\u0435\u043a\u0442.docx"
+            },
+            {
+                "name": "\u0430\u043d\u043e\u0442\u0430\u0446\u0438\u044f.txt",
+                "is_dir": false,
+                "path": "\u0430\u043d\u043e\u0442\u0430\u0446\u0438\u044f.txt"
+            },
+            {
+                "name": "\u0442\u0435\u0441\u0442",
+                "is_dir": true,
+                "path": "\u0442\u0435\u0441\u0442"
+            },
+            {
+                "name": "\u0442\u0435\u0441\u044211",
+                "is_dir": true,
+                "path": "\u0442\u0435\u0441\u044211"
+            }
+        ]
+    },
+    {
+        "login": "user",
+        "password": "passeord"
+    },
+    {
+        "login": "user",
+        "password": "password"
+    },
+    {
+        "requested_path": "",
+        "full_path": "D:/\u043f\u0440\u043e\u0435\u043a\u0442 10 \u043a\u043b\u0430\u0441\u0441/\u0440\u0435\u0430\u043b\u0438\u0437\u0430\u0446\u0438\u044f/Cloud_school/example",
+        "files": [
+            {
+                "name": "200.JavaScript.Programs.for.Beginners.pdf",
+                "is_dir": false,
+                "path": "200.JavaScript.Programs.for.Beginners.pdf"
+            },
+            {
+                "name": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_1 (1).png",
+                "is_dir": false,
+                "path": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_1 (1).png"
+            },
+            {
+                "name": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_1.png",
+                "is_dir": false,
+                "path": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_1.png"
+            },
+            {
+                "name": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_2.png",
+                "is_dir": false,
+                "path": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_2.png"
+            },
+            {
+                "name": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_3 (1).png",
+                "is_dir": false,
+                "path": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_3 (1).png"
+            },
+            {
+                "name": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_3.png",
+                "is_dir": false,
+                "path": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_3.png"
+            },
+            {
+                "name": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_4.png",
+                "is_dir": false,
+                "path": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_4.png"
+            },
+            {
+                "name": "9785977520362.zip",
+                "is_dir": false,
+                "path": "9785977520362.zip"
+            },
+            {
+                "name": "Cloud_school (1).zip",
+                "is_dir": false,
+                "path": "Cloud_school (1).zip"
+            },
+            {
+                "name": "Cloud_school (2).zip",
+                "is_dir": false,
+                "path": "Cloud_school (2).zip"
+            },
+            {
+                "name": "Cloud_school.zip",
+                "is_dir": false,
+                "path": "Cloud_school.zip"
+            },
+            {
+                "name": "Outline-Manager.exe",
+                "is_dir": false,
+                "path": "Outline-Manager.exe"
+            },
+            {
+                "name": "cloud.db",
+                "is_dir": false,
+                "path": "cloud.db"
+            },
+            {
+                "name": "config.py",
+                "is_dir": false,
+                "path": "config.py"
+            },
+            {
+                "name": "encrypt.js",
+                "is_dir": false,
+                "path": "encrypt.js"
+            },
+            {
+                "name": "git.zip",
+                "is_dir": false,
+                "path": "git.zip"
+            },
+            {
+                "name": "tportable.4.3.3.zip",
+                "is_dir": false,
+                "path": "tportable.4.3.3.zip"
+            },
+            {
+                "name": "\u0414\u0440\u043e\u043d\u043e\u0432_\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440_React_19_\u0420\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0430_\u0432\u0435\u0431_\u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u0439_\u043d\u0430_J\u0430vaScript (1).pdf",
+                "is_dir": false,
+                "path": "\u0414\u0440\u043e\u043d\u043e\u0432_\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440_React_19_\u0420\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0430_\u0432\u0435\u0431_\u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u0439_\u043d\u0430_J\u0430vaScript (1).pdf"
+            },
+            {
+                "name": "\u0414\u0440\u043e\u043d\u043e\u0432_\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440_React_19_\u0420\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0430_\u0432\u0435\u0431_\u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u0439_\u043d\u0430_J\u0430vaScript.pdf",
+                "is_dir": false,
+                "path": "\u0414\u0440\u043e\u043d\u043e\u0432_\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440_React_19_\u0420\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0430_\u0432\u0435\u0431_\u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u0439_\u043d\u0430_J\u0430vaScript.pdf"
+            },
+            {
+                "name": "\u041d\u043e\u0432\u0430\u044f \u043f\u0430\u043f\u043a\u0430",
+                "is_dir": true,
+                "path": "\u041d\u043e\u0432\u0430\u044f \u043f\u0430\u043f\u043a\u0430"
+            },
+            {
+                "name": "\u041f\u043e\u0434\u0433\u043e\u0442\u043e\u0432\u043a\u0430 \u043a \u044d\u043a\u0437\u0430\u043c\u0435\u043d\u0443 (\u041e\u043f\u0435\u0440\u0430\u0442\u043e\u0440 \u042d\u0412\u041c).pptx",
+                "is_dir": false,
+                "path": "\u041f\u043e\u0434\u0433\u043e\u0442\u043e\u0432\u043a\u0430 \u043a \u044d\u043a\u0437\u0430\u043c\u0435\u043d\u0443 (\u041e\u043f\u0435\u0440\u0430\u0442\u043e\u0440 \u042d\u0412\u041c).pptx"
+            },
+            {
+                "name": "\u041f\u0440\u043e\u0435\u043a\u0442 \u0418\u043d\u0436\u0435\u043d\u0435\u0440\u044b \u0431\u0443\u0434\u0443\u0449\u0435\u0433\u043e.docx",
+                "is_dir": false,
+                "path": "\u041f\u0440\u043e\u0435\u043a\u0442 \u0418\u043d\u0436\u0435\u043d\u0435\u0440\u044b \u0431\u0443\u0434\u0443\u0449\u0435\u0433\u043e.docx"
+            },
+            {
+                "name": "\u041f\u0440\u043e\u0435\u043a\u0442 \u043f\u0440\u0435\u0437\u0435\u043d\u0442\u0430\u0446\u0438\u044f.pptx",
+                "is_dir": false,
+                "path": "\u041f\u0440\u043e\u0435\u043a\u0442 \u043f\u0440\u0435\u0437\u0435\u043d\u0442\u0430\u0446\u0438\u044f.pptx"
+            },
+            {
+                "name": "\u041f\u0440\u043e\u0435\u043a\u0442.docx",
+                "is_dir": false,
+                "path": "\u041f\u0440\u043e\u0435\u043a\u0442.docx"
+            },
+            {
+                "name": "\u0430\u043d\u043e\u0442\u0430\u0446\u0438\u044f.txt",
+                "is_dir": false,
+                "path": "\u0430\u043d\u043e\u0442\u0430\u0446\u0438\u044f.txt"
+            },
+            {
+                "name": "\u0442\u0435\u0441\u0442",
+                "is_dir": true,
+                "path": "\u0442\u0435\u0441\u0442"
+            },
+            {
+                "name": "\u0442\u0435\u0441\u044211",
+                "is_dir": true,
+                "path": "\u0442\u0435\u0441\u044211"
+            }
+        ]
+    },
+    {
+        "login": "user",
+        "password": "password"
+    },
+    {
+        "requested_path": "",
+        "full_path": "D:/\u043f\u0440\u043e\u0435\u043a\u0442 10 \u043a\u043b\u0430\u0441\u0441/\u0440\u0435\u0430\u043b\u0438\u0437\u0430\u0446\u0438\u044f/Cloud_school/example",
+        "files": [
+            {
+                "name": "200.JavaScript.Programs.for.Beginners.pdf",
+                "is_dir": false,
+                "path": "200.JavaScript.Programs.for.Beginners.pdf"
+            },
+            {
+                "name": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_1 (1).png",
+                "is_dir": false,
+                "path": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_1 (1).png"
+            },
+            {
+                "name": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_1.png",
+                "is_dir": false,
+                "path": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_1.png"
+            },
+            {
+                "name": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_2.png",
+                "is_dir": false,
+                "path": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_2.png"
+            },
+            {
+                "name": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_3 (1).png",
+                "is_dir": false,
+                "path": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_3 (1).png"
+            },
+            {
+                "name": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_3.png",
+                "is_dir": false,
+                "path": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_3.png"
+            },
+            {
+                "name": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_4.png",
+                "is_dir": false,
+                "path": "44622_\u041d\u0430\u0437\u043e\u043b\u0438\u043d_4.png"
+            },
+            {
+                "name": "9785977520362.zip",
+                "is_dir": false,
+                "path": "9785977520362.zip"
+            },
+            {
+                "name": "Cloud_school (1).zip",
+                "is_dir": false,
+                "path": "Cloud_school (1).zip"
+            },
+            {
+                "name": "Cloud_school (2).zip",
+                "is_dir": false,
+                "path": "Cloud_school (2).zip"
+            },
+            {
+                "name": "Cloud_school.zip",
+                "is_dir": false,
+                "path": "Cloud_school.zip"
+            },
+            {
+                "name": "Outline-Manager.exe",
+                "is_dir": false,
+                "path": "Outline-Manager.exe"
+            },
+            {
+                "name": "cloud.db",
+                "is_dir": false,
+                "path": "cloud.db"
+            },
+            {
+                "name": "config.py",
+                "is_dir": false,
+                "path": "config.py"
+            },
+            {
+                "name": "encrypt.js",
+                "is_dir": false,
+                "path": "encrypt.js"
+            },
+            {
+                "name": "git.zip",
+                "is_dir": false,
+                "path": "git.zip"
+            },
+            {
+                "name": "tportable.4.3.3.zip",
+                "is_dir": false,
+                "path": "tportable.4.3.3.zip"
+            },
+            {
+                "name": "\u0414\u0440\u043e\u043d\u043e\u0432_\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440_React_19_\u0420\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0430_\u0432\u0435\u0431_\u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u0439_\u043d\u0430_J\u0430vaScript (1).pdf",
+                "is_dir": false,
+                "path": "\u0414\u0440\u043e\u043d\u043e\u0432_\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440_React_19_\u0420\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0430_\u0432\u0435\u0431_\u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u0439_\u043d\u0430_J\u0430vaScript (1).pdf"
+            },
+            {
+                "name": "\u0414\u0440\u043e\u043d\u043e\u0432_\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440_React_19_\u0420\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0430_\u0432\u0435\u0431_\u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u0439_\u043d\u0430_J\u0430vaScript.pdf",
+                "is_dir": false,
+                "path": "\u0414\u0440\u043e\u043d\u043e\u0432_\u0412\u043b\u0430\u0434\u0438\u043c\u0438\u0440_React_19_\u0420\u0430\u0437\u0440\u0430\u0431\u043e\u0442\u043a\u0430_\u0432\u0435\u0431_\u043f\u0440\u0438\u043b\u043e\u0436\u0435\u043d\u0438\u0439_\u043d\u0430_J\u0430vaScript.pdf"
+            },
+            {
+                "name": "\u041d\u043e\u0432\u0430\u044f \u043f\u0430\u043f\u043a\u0430",
+                "is_dir": true,
+                "path": "\u041d\u043e\u0432\u0430\u044f \u043f\u0430\u043f\u043a\u0430"
+            },
+            {
+                "name": "\u041f\u043e\u0434\u0433\u043e\u0442\u043e\u0432\u043a\u0430 \u043a \u044d\u043a\u0437\u0430\u043c\u0435\u043d\u0443 (\u041e\u043f\u0435\u0440\u0430\u0442\u043e\u0440 \u042d\u0412\u041c).pptx",
+                "is_dir": false,
+                "path": "\u041f\u043e\u0434\u0433\u043e\u0442\u043e\u0432\u043a\u0430 \u043a \u044d\u043a\u0437\u0430\u043c\u0435\u043d\u0443 (\u041e\u043f\u0435\u0440\u0430\u0442\u043e\u0440 \u042d\u0412\u041c).pptx"
+            },
+            {
+                "name": "\u041f\u0440\u043e\u0435\u043a\u0442 \u0418\u043d\u0436\u0435\u043d\u0435\u0440\u044b \u0431\u0443\u0434\u0443\u0449\u0435\u0433\u043e.docx",
+                "is_dir": false,
+                "path": "\u041f\u0440\u043e\u0435\u043a\u0442 \u0418\u043d\u0436\u0435\u043d\u0435\u0440\u044b \u0431\u0443\u0434\u0443\u0449\u0435\u0433\u043e.docx"
+            },
+            {
+                "name": "\u041f\u0440\u043e\u0435\u043a\u0442 \u043f\u0440\u0435\u0437\u0435\u043d\u0442\u0430\u0446\u0438\u044f.pptx",
+                "is_dir": false,
+                "path": "\u041f\u0440\u043e\u0435\u043a\u0442 \u043f\u0440\u0435\u0437\u0435\u043d\u0442\u0430\u0446\u0438\u044f.pptx"
+            },
+            {
+                "name": "\u041f\u0440\u043e\u0435\u043a\u0442.docx",
+                "is_dir": false,
+                "path": "\u041f\u0440\u043e\u0435\u043a\u0442.docx"
+            },
+            {
+                "name": "\u0430\u043d\u043e\u0442\u0430\u0446\u0438\u044f.txt",
+                "is_dir": false,
+                "path": "\u0430\u043d\u043e\u0442\u0430\u0446\u0438\u044f.txt"
+            },
+            {
+                "name": "\u0442\u0435\u0441\u0442",
+                "is_dir": true,
+                "path": "\u0442\u0435\u0441\u0442"
+            },
+            {
+                "name": "\u0442\u0435\u0441\u044211",
+                "is_dir": true,
+                "path": "\u0442\u0435\u0441\u044211"
+            }
+        ]
+    }
+]
