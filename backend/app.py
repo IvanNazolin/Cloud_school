@@ -123,7 +123,8 @@ def settings():
         selected_user_id = request.form.get('selected_user_id')
         new_username = request.form.get('new_username')
         new_password = request.form.get('new_password')
-        
+        print(new_username)
+
         new_admin_name = request.form.get('new_admin_name')
         new_admin_password = request.form.get('new_admin_password')
 
@@ -161,6 +162,7 @@ def settings():
                 new_password_hash = hashlib.sha256(new_password.encode()).hexdigest()
                 cursor.execute('''UPDATE config SET password_hash = ? WHERE user_id = ? ''',
                 (new_password_hash, selected_user_id))
+                #print("Пароль изменен")
 
             # Обновляем имя администратора, если оно указано
             if new_admin_name:
@@ -304,7 +306,7 @@ def generate_zip_stream(folder_path):
 def download_folder(folderpath):
     """Загрузка архива папки без сжатия (ZIP_STORED) с потоковой передачей данных"""
     try:
-        if folderpath == '':
+        if folderpath == 'R':
             folder_to_download = BASE_DIR
         else:
             folder_to_download = os.path.join(BASE_DIR, folderpath)
@@ -400,5 +402,5 @@ def open_encode():
    return render_template('encode.html')
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0' , port=100, ssl_context=('sertificats/certificate.crt', 'sertificats/certificate.key'))
+    app.run(host='0.0.0.0' , port=110, ssl_context=('sertificats/certificate.crt', 'sertificats/certificate.key'))
     

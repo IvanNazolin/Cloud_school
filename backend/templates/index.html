@@ -19,7 +19,7 @@
             {% if subpath %}
                 <a class="button download-folder" href="{{ url_for('download_folder', folderpath=subpath) }}">Скачать эту папку</a>
             {% else %}
-                <a class="button download-folder" href="{{ url_for('download_folder', folderpath='') }}">Скачать корневую папку</a>
+                <a class="button download-folder" href="{{ url_for('download_folder', folderpath='R') }}">Скачать корневую папку</a>
             {% endif %}
             <form action="{{ url_for('upload_file') }}" method="post" enctype="multipart/form-data" class="upload-form">
                 <input type="hidden" name="subpath" value="{{ subpath }}">
@@ -37,7 +37,7 @@
 
             <!-- Button to open encode.html in a new window -->
             <a class="button open-file" href="{{ url_for('open_encode') }}" >Расшифровать файл</a>
-            <a class="button log out" href="{{ url_for('logout') }}" target="_blank">Завершить работу</a>
+            <a class="button log out" href="{{ url_for('logout') }}">Завершить работу</a>
 
             <script>
                 function openFile() {
