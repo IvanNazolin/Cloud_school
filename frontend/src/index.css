@@ -183,6 +183,8 @@ body {
 
   background-image: linear-gradient(
     15deg,
+    
+    
     hsl(86deg 84% 66%) 21%,
     hsl(65deg 91% 78%) 7%,
     hsl(75deg 87% 72%) 14%,
@@ -197,6 +199,8 @@ body {
     hsl(168deg 52% 19%) 79%,
     hsl(178deg 48% 14%) 100%
   );
+  background-size: 200% 200%; /* Увеличиваем размер фона для анимации */
+  animation: gradientAnimation 10s ease infinite; /* Анимация */
 
   margin: 0;
   padding: 0;
@@ -251,6 +255,13 @@ h1 {
 */
 
 .file-list {
+
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%; /* Обрезаем длинный текст */
+
   flex-grow: 1; /* Файлы займут все свободное пространство */
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Равномерное распределение файлов */
@@ -366,3 +377,4 @@ h1 {
   transform: translateY(-50%);
   cursor: pointer;
 }
+

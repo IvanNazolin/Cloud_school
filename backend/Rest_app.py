@@ -241,4 +241,3 @@ def create_folder():
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0' , port=100)
-    #app.run(host='0.0.0.0' , port=100, ssl_context=('sertificats/certificate.crt', 'sertificats/certificate.key'))

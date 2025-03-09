@@ -65,7 +65,7 @@ function Login({ setStatus }) {
             className="password-toggle"
             onClick={() => setShowPassword(!showPassword)}
           >
-            {showPassword ? "🙈" : "👁️"}
+            {showPassword ? "👁️" : "👁️"}
           </span>
         </div>
         <input type="submit" value="Войти" className="btn" />
