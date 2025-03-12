@@ -3,6 +3,15 @@ import './App.css';
 
 const baseApiUrl = "http://192.168.1.10:100";
 
+const hash = async (message) => {
+  const encoder = new TextEncoder();
+  const data = encoder.encode(message);
+  const hashBuffer = await crypto.subtle.digest("SHA-256", data);
+  const hashArray = Array.from(new Uint8Array(hashBuffer));
+  return hashArray.map(byte => byte.toString(16).padStart(2, "0")).join("");
+};
+
+
 // Login Component
 function Login({ setStatus }) {
   const [login, setLogin] = useState('');
@@ -14,12 +23,16 @@ function Login({ setStatus }) {
     event.preventDefault();
 
     try {
+      // Хешируем логин и пароль перед отправкой
+      const hashedLogin = await hash(login);
+      const hashedPassword = await hash(password);
+
       const response = await fetch(`${baseApiUrl}/login`, {
-        method: 'POST',
+        method: "POST",
         headers: {
-          'Content-Type': 'application/json',
+          "Content-Type": "application/json",
         },
-        body: JSON.stringify({ login, password }),
+        body: JSON.stringify({ login: hashedLogin, password: hashedPassword }),
       });
 
       const data = await response.json();

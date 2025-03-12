@@ -21,12 +21,6 @@ app.secret_key = '1234'
 
 BASE_DIR = "D:/проект 10 класс/реализация/Cloud_school/example"
 
-# Простая эмуляция базы данных пользователей с хэшированием паролей
-USERS = {
-    "admin": hashlib.sha256("1234".encode()).hexdigest(),
-    "user": hashlib.sha256("password".encode()).hexdigest()
-}
-
 
 def encrypt_file_with_js(file_path, password):
     # Запуск Node.js скрипта с аргументами (путь к файлу и пароль)
@@ -74,8 +68,7 @@ def login():
         password_hash = tmp[0]
         if password_hash == hashed_password:
 
-    #if login in USERS and USERS[login] == hashed_password:
-            session['login'] = login  # Сохраняем информацию о пользователе в сессии
+            session['login'] = login  
             return jsonify({"status": "success", "message": "Вход выполнен успешно"}), 200
         else:
             return jsonify({"status": "error", "message": "Неверный логин или пароль"}), 401
