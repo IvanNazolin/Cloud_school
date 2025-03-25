@@ -62,19 +62,20 @@ def login():
     bd = sqlite3.connect('bd/cloud.db')
     cursor = bd.cursor()
 
-    cursor.execute(f"SELECT password_hash FROM config WHERE username='{hashed_login}'")
+    cursor.execute("SELECT password_hash, isAdmin FROM config WHERE username=?", (hashed_login,))
     tmp = cursor.fetchone()
+    
     if tmp:
-        password_hash = tmp[0]
+        password_hash, is_admin = tmp
         if password_hash == hashed_password:
-
             session['login'] = login  
-            return jsonify({"status": "success", "message": "Вход выполнен успешно"}), 200
+            role = "admin" if is_admin == 1 else "user"
+            return jsonify({"status": "success", "message": "Вход выполнен успешно", "role": role}), 200
         else:
             return jsonify({"status": "error", "message": "Неверный логин или пароль"}), 401
-
     else:
         return jsonify({"status": "error", "message": "Неверный логин или пароль"}), 401
+
 
 @app.route('/api/folder/', defaults={'subpath': ''}, methods=['GET'])
 @app.route('/api/folder/<path:subpath>', methods=['GET'])

@@ -1,0 +1,156 @@
+async function hashData(data) {
+  const encoder = new TextEncoder();
+  const dataBuffer = encoder.encode(data);
+  const hashBuffer = await crypto.subtle.digest("SHA-256", dataBuffer);
+  return Array.from(new Uint8Array(hashBuffer))
+    .map(b => b.toString(16).padStart(2, "0"))
+    .join("");
+}
+
+function Settings() {
+  const [users, setUsers] = useState([]);
+  const [activeSessions, setActiveSessions] = useState([]);
+  const [formData, setFormData] = useState({});
+
+  useEffect(() => {
+    fetch("/api/users")
+      .then((response) => response.json())
+      .then((data) => setUsers(data))
+      .catch((error) => console.error("Error fetching users:", error));
+
+    fetch("/api/sessions")
+      .then((response) => response.json())
+      .then((data) => setActiveSessions(data))
+      .catch((error) => console.error("Error fetching sessions:", error));
+  }, []);
+
+  const handleChange = async (field, value) => {
+    if (value) {
+      const hashedValue = ["newPassword", "newAdminPassword"].includes(field)
+        ? await hashData(value)
+        : value;
+      setFormData(prev => ({ ...prev, [field]: hashedValue }));
+    } else {
+      setFormData(prev => {
+        const updatedForm = { ...prev };
+        delete updatedForm[field];
+        return updatedForm;
+      });
+    }
+  };
+
+  const handleSave = async (event) => {
+    event.preventDefault();
+    if (Object.keys(formData).length === 0) {
+      alert("No changes detected");
+      return;
+    }
+
+    try {
+      const response = await fetch("/api/settings", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+      const result = await response.json();
+      alert(result.message);
+    } catch (error) {
+      console.error("Error saving settings:", error);
+    }
+  };
+
+  const handleDisconnect = async (ip) => {
+    try {
+      const response = await fetch(`/api/disconnect/${ip}`, { method: "POST" });
+      const result = await response.json();
+      alert(result.message);
+      setActiveSessions(prev => prev.filter(session => session.ip !== ip));
+    } catch (error) {
+      console.error("Error disconnecting user:", error);
+    }
+  };
+
+  return (
+    <div>
+      <h1>Settings</h1>
+      <form onSubmit={handleSave}>
+        <a className="button log out" href="/logout">Вернуться</a>
+        <label htmlFor="selected_user_id">Выберите пользователя:</label>
+        <select
+          id="selected_user_id"
+          onChange={(e) => handleChange("selectedUser", e.target.value)}
+        >
+          <option value="">Текущий пользователь</option>
+          {users.map((user) => (
+            <option key={user.id} value={user.id}>{user.name}</option>
+          ))}
+        </select>
+        <br /><br />
+
+        <label htmlFor="new_username">Новое имя пользователя:</label>
+        <input
+          type="text"
+          id="new_username"
+          onChange={(e) => handleChange("newUsername", e.target.value)}
+        />
+        <br /><br />
+
+        <label htmlFor="new_password">Новый пароль пользователя:</label>
+        <input
+          type="password"
+          id="new_password"
+          onChange={(e) => handleChange("newPassword", e.target.value)}
+        />
+        <hr />
+
+        <label htmlFor="new_admin_name">Новое имя админа:</label>
+        <input
+          type="text"
+          id="new_admin_name"
+          onChange={(e) => handleChange("newAdminName", e.target.value)}
+        />
+        <br /><br />
+
+        <label htmlFor="new_admin_password">Новый пароль админа:</label>
+        <input
+          type="password"
+          id="new_admin_password"
+          onChange={(e) => handleChange("newAdminPassword", e.target.value)}
+        />
+        <hr />
+
+        <label htmlFor="encryption_mode">Активировать шифрование:</label>
+        <select
+          id="encryption_mode"
+          onChange={(e) => handleChange("encryptionMode", e.target.value)}
+        >
+          <option value="1">Да</option>
+          <option value="0">Нет</option>
+        </select>
+        <br /><br />
+
+        <button type="submit">Сохранить изменения</button>
+      </form>
+
+      <h2>Активные сессии</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>IP-адрес</th>
+            <th>Действие</th>
+          </tr>
+        </thead>
+        <tbody>
+          {activeSessions.map((session) => (
+            <tr key={session.ip}>
+              <td>{session.ip}</td>
+              <td>
+                <button onClick={() => handleDisconnect(session.ip)}>Отключить</button>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+}

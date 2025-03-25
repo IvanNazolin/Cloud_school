@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='favicon.ico') }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Encryption and Decryption</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='encode.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Расшифровать или зашифровать файл</h1>
+
+        <div class="input-container">
+            <label for="file">Выбрать Файл:</label>
+            <!-- Скрываем стандартную кнопку -->
+            <input type="file" id="file" />
+            <!-- Кастомная кнопка -->
+            <label for="file" class="custom-file-upload">
+                Выбрать Файл
+            </label>
+        </div>
+
+        <div class="input-container">
+            <label for="password">Ввести пароль:</label>
+            <input type="password" id="password" />
+        </div>
+
+        <div class="button-container">
+            <button id="encryptButton">Зашифровать</button>
+            <button id="decryptButton">Расшифровать</button>
+        </div>
+        <a class="button log out" href="{{ url_for('logout') }}">Вернуться</a>
+        <p id="status"></p>
+    </div>
+
+    <script src="static/encode.js"></script>
+</body>
+</html>
